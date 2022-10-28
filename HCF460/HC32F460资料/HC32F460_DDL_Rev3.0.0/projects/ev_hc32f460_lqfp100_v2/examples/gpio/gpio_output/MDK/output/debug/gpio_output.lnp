@@ -1,0 +1,12 @@
+--cpu=Cortex-M4 --fpu=SoftVFP
+".\output\debug\startup_hc32f460.o"
+".\output\debug\system_hc32f460.o"
+".\output\debug\main.o"
+".\output\debug\hc32_ll.o"
+".\output\debug\hc32_ll_gpio.o"
+".\output\debug\hc32_ll_icg.o"
+".\output\debug\hc32_ll_utility.o"
+--library_type=microlib --strict --scatter ".\output\debug\gpio_output.sct"
+--keep=*Handler --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\output\debug\gpio_output.map" -o .\output\debug\gpio_output.axf

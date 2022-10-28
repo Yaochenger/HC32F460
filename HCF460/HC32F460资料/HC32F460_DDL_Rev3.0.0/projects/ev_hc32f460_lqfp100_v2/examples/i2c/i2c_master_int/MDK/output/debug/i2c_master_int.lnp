@@ -1,0 +1,21 @@
+--cpu=Cortex-M4 --fpu=SoftVFP
+".\output\debug\startup_hc32f460.o"
+".\output\debug\system_hc32f460.o"
+".\output\debug\main.o"
+".\output\debug\hc32_ll.o"
+".\output\debug\hc32_ll_clk.o"
+".\output\debug\hc32_ll_efm.o"
+".\output\debug\hc32_ll_fcg.o"
+".\output\debug\hc32_ll_gpio.o"
+".\output\debug\hc32_ll_i2c.o"
+".\output\debug\hc32_ll_icg.o"
+".\output\debug\hc32_ll_interrupts.o"
+".\output\debug\hc32_ll_keyscan.o"
+".\output\debug\hc32_ll_pwc.o"
+".\output\debug\hc32_ll_sram.o"
+".\output\debug\hc32_ll_utility.o"
+".\output\debug\ev_hc32f460_lqfp100_v2.o"
+--library_type=microlib --strict --scatter ".\output\debug\i2c_master_int.sct"
+--keep=*Handler --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\output\debug\i2c_master_int.map" -o .\output\debug\i2c_master_int.axf

@@ -1,0 +1,19 @@
+--cpu=Cortex-M4 --fpu=SoftVFP
+".\output\debug\startup_hc32f460.o"
+".\output\debug\system_hc32f460.o"
+".\output\debug\main.o"
+".\output\debug\hc32f460_pwc.o"
+".\output\debug\hc32f460_efm.o"
+".\output\debug\hc32f460_icg.o"
+".\output\debug\hc32f460_interrupts.o"
+".\output\debug\hc32f460_utility.o"
+".\output\debug\hc32f460_exint_nmi_swi.o"
+".\output\debug\hc32f460_sram.o"
+".\output\debug\hc32f460_keyscan.o"
+".\output\debug\hc32f460_clk.o"
+".\output\debug\hc32f460_gpio.o"
+".\output\debug\ev_hc32f460_lqfp100_v1.o"
+--library_type=microlib --strict --scatter ".\output\debug\clk_switch_sysclk.sct"
+--keep=*Handler --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\output\debug\clk_switch_sysclk.map" -o .\output\debug\clk_switch_sysclk.axf

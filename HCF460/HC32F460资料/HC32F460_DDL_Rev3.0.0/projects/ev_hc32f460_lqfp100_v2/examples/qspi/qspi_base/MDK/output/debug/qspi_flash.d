@@ -1,0 +1,17 @@
+.\output\debug\qspi_flash.o: ../source/qspi_flash.c
+.\output\debug\qspi_flash.o: ../source/qspi_flash.h
+.\output\debug\qspi_flash.o: ../../../../../../drivers/hc32_ll_driver/inc/hc32_ll_qspi.h
+.\output\debug\qspi_flash.o: ../../../../../../drivers/hc32_ll_driver/inc/hc32_ll_def.h
+.\output\debug\qspi_flash.o: D:\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
+.\output\debug\qspi_flash.o: D:\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\debug\qspi_flash.o: ../../../../../../drivers/cmsis/Device/HDSC/hc32f4xx/Include/hc32f4xx.h
+.\output\debug\qspi_flash.o: ../../../../../../drivers/cmsis/Device/HDSC/hc32f4xx/Include/hc32f460.h
+.\output\debug\qspi_flash.o: ../../../../../../drivers/cmsis/Include/core_cm4.h
+.\output\debug\qspi_flash.o: ../../../../../../drivers/cmsis/Include/cmsis_version.h
+.\output\debug\qspi_flash.o: ../../../../../../drivers/cmsis/Include/cmsis_compiler.h
+.\output\debug\qspi_flash.o: ../../../../../../drivers/cmsis/Include/cmsis_armcc.h
+.\output\debug\qspi_flash.o: ../../../../../../drivers/cmsis/Include/mpu_armv7.h
+.\output\debug\qspi_flash.o: ../../../../../../drivers/cmsis/Device/HDSC/hc32f4xx/Include/system_hc32f460.h
+.\output\debug\qspi_flash.o: ../source/hc32f4xx_conf.h
+.\output\debug\qspi_flash.o: ../../../../../../drivers/hc32_ll_driver/inc/hc32_ll_fcg.h
+.\output\debug\qspi_flash.o: ../../../../../../drivers/hc32_ll_driver/inc/hc32_ll_gpio.h

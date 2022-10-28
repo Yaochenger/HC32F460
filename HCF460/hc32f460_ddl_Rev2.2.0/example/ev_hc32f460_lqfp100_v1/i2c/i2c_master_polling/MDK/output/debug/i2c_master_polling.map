@@ -1,0 +1,1816 @@
+Component: ARM Compiler 5.06 update 6 (build 750) Tool: armlink [4d35ed]
+
+==============================================================================
+
+Section Cross References
+
+    startup_hc32f460.o(RESET) refers to startup_hc32f460.o(STACK) for __initial_sp
+    startup_hc32f460.o(RESET) refers to startup_hc32f460.o(.text) for Reset_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.NMI_Handler) for NMI_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.HardFault_Handler) for HardFault_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.MemManage_Handler) for MemManage_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.BusFault_Handler) for BusFault_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.UsageFault_Handler) for UsageFault_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.SVC_Handler) for SVC_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.DebugMon_Handler) for DebugMon_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.PendSV_Handler) for PendSV_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.SysTick_Handler) for SysTick_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ000_Handler) for IRQ000_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ001_Handler) for IRQ001_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ002_Handler) for IRQ002_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ003_Handler) for IRQ003_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ004_Handler) for IRQ004_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ005_Handler) for IRQ005_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ006_Handler) for IRQ006_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ007_Handler) for IRQ007_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ008_Handler) for IRQ008_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ009_Handler) for IRQ009_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ010_Handler) for IRQ010_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ011_Handler) for IRQ011_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ012_Handler) for IRQ012_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ013_Handler) for IRQ013_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ014_Handler) for IRQ014_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ015_Handler) for IRQ015_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ016_Handler) for IRQ016_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ017_Handler) for IRQ017_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ018_Handler) for IRQ018_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ019_Handler) for IRQ019_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ020_Handler) for IRQ020_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ021_Handler) for IRQ021_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ022_Handler) for IRQ022_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ023_Handler) for IRQ023_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ024_Handler) for IRQ024_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ025_Handler) for IRQ025_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ026_Handler) for IRQ026_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ027_Handler) for IRQ027_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ028_Handler) for IRQ028_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ029_Handler) for IRQ029_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ030_Handler) for IRQ030_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ031_Handler) for IRQ031_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ032_Handler) for IRQ032_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ033_Handler) for IRQ033_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ034_Handler) for IRQ034_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ035_Handler) for IRQ035_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ036_Handler) for IRQ036_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ037_Handler) for IRQ037_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ038_Handler) for IRQ038_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ039_Handler) for IRQ039_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ040_Handler) for IRQ040_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ041_Handler) for IRQ041_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ042_Handler) for IRQ042_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ043_Handler) for IRQ043_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ044_Handler) for IRQ044_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ045_Handler) for IRQ045_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ046_Handler) for IRQ046_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ047_Handler) for IRQ047_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ048_Handler) for IRQ048_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ049_Handler) for IRQ049_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ050_Handler) for IRQ050_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ051_Handler) for IRQ051_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ052_Handler) for IRQ052_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ053_Handler) for IRQ053_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ054_Handler) for IRQ054_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ055_Handler) for IRQ055_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ056_Handler) for IRQ056_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ057_Handler) for IRQ057_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ058_Handler) for IRQ058_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ059_Handler) for IRQ059_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ060_Handler) for IRQ060_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ061_Handler) for IRQ061_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ062_Handler) for IRQ062_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ063_Handler) for IRQ063_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ064_Handler) for IRQ064_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ065_Handler) for IRQ065_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ066_Handler) for IRQ066_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ067_Handler) for IRQ067_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ068_Handler) for IRQ068_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ069_Handler) for IRQ069_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ070_Handler) for IRQ070_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ071_Handler) for IRQ071_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ072_Handler) for IRQ072_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ073_Handler) for IRQ073_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ074_Handler) for IRQ074_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ075_Handler) for IRQ075_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ076_Handler) for IRQ076_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ077_Handler) for IRQ077_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ078_Handler) for IRQ078_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ079_Handler) for IRQ079_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ080_Handler) for IRQ080_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ081_Handler) for IRQ081_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ082_Handler) for IRQ082_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ083_Handler) for IRQ083_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ084_Handler) for IRQ084_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ085_Handler) for IRQ085_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ086_Handler) for IRQ086_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ087_Handler) for IRQ087_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ088_Handler) for IRQ088_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ089_Handler) for IRQ089_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ090_Handler) for IRQ090_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ091_Handler) for IRQ091_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ092_Handler) for IRQ092_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ093_Handler) for IRQ093_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ094_Handler) for IRQ094_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ095_Handler) for IRQ095_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ096_Handler) for IRQ096_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ097_Handler) for IRQ097_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ098_Handler) for IRQ098_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ099_Handler) for IRQ099_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ100_Handler) for IRQ100_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ101_Handler) for IRQ101_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ102_Handler) for IRQ102_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ103_Handler) for IRQ103_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ104_Handler) for IRQ104_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ105_Handler) for IRQ105_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ106_Handler) for IRQ106_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ107_Handler) for IRQ107_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ108_Handler) for IRQ108_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ109_Handler) for IRQ109_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ110_Handler) for IRQ110_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ111_Handler) for IRQ111_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ112_Handler) for IRQ112_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ113_Handler) for IRQ113_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ114_Handler) for IRQ114_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ115_Handler) for IRQ115_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ116_Handler) for IRQ116_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ117_Handler) for IRQ117_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ118_Handler) for IRQ118_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ119_Handler) for IRQ119_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ120_Handler) for IRQ120_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ121_Handler) for IRQ121_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ122_Handler) for IRQ122_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ123_Handler) for IRQ123_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ124_Handler) for IRQ124_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ125_Handler) for IRQ125_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ126_Handler) for IRQ126_Handler
+    startup_hc32f460.o(RESET) refers to hc32f460_interrupts.o(i.IRQ127_Handler) for IRQ127_Handler
+    startup_hc32f460.o(.text) refers to system_hc32f460.o(i.SystemInit) for SystemInit
+    startup_hc32f460.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    system_hc32f460.o(i.SystemCoreClockUpdate) refers to system_hc32f460.o(.data) for HRC_VALUE
+    system_hc32f460.o(i.SystemInit) refers to system_hc32f460.o(i.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    main.o(i.I2C_Master_Receive) refers to hc32f460_i2c.o(i.I2C_Cmd) for I2C_Cmd
+    main.o(i.I2C_Master_Receive) refers to hc32f460_i2c.o(i.I2C_SoftwareResetCmd) for I2C_SoftwareResetCmd
+    main.o(i.I2C_Master_Receive) refers to hc32f460_i2c.o(i.I2C_Start) for I2C_Start
+    main.o(i.I2C_Master_Receive) refers to hc32f460_i2c.o(i.I2C_AckConfig) for I2C_AckConfig
+    main.o(i.I2C_Master_Receive) refers to hc32f460_i2c.o(i.I2C_TransAddr) for I2C_TransAddr
+    main.o(i.I2C_Master_Receive) refers to hc32f460_i2c.o(i.I2C_MasterDataReceiveAndStop) for I2C_MasterDataReceiveAndStop
+    main.o(i.I2C_Master_Receive) refers to hc32f460_i2c.o(i.I2C_Stop) for I2C_Stop
+    main.o(i.I2C_Master_Transmit) refers to hc32f460_i2c.o(i.I2C_Cmd) for I2C_Cmd
+    main.o(i.I2C_Master_Transmit) refers to hc32f460_i2c.o(i.I2C_SoftwareResetCmd) for I2C_SoftwareResetCmd
+    main.o(i.I2C_Master_Transmit) refers to hc32f460_i2c.o(i.I2C_Start) for I2C_Start
+    main.o(i.I2C_Master_Transmit) refers to hc32f460_i2c.o(i.I2C_TransAddr) for I2C_TransAddr
+    main.o(i.I2C_Master_Transmit) refers to hc32f460_i2c.o(i.I2C_TransData) for I2C_TransData
+    main.o(i.I2C_Master_Transmit) refers to hc32f460_i2c.o(i.I2C_Stop) for I2C_Stop
+    main.o(i.Master_Initialize) refers to hc32f460_i2c.o(i.I2C_DeInit) for I2C_DeInit
+    main.o(i.Master_Initialize) refers to hc32f460_i2c.o(i.I2C_Init) for I2C_Init
+    main.o(i.Master_Initialize) refers to hc32f460_i2c.o(i.I2C_BusWaitCmd) for I2C_BusWaitCmd
+    main.o(i.main) refers to memseta.o(.text) for __aeabi_memclr4
+    main.o(i.main) refers to ev_hc32f460_lqfp100_v1.o(i.BSP_CLK_Init) for BSP_CLK_Init
+    main.o(i.main) refers to ev_hc32f460_lqfp100_v1.o(i.BSP_LED_Init) for BSP_LED_Init
+    main.o(i.main) refers to ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_Init) for BSP_KEY_Init
+    main.o(i.main) refers to hc32f460_gpio.o(i.PORT_SetFunc) for PORT_SetFunc
+    main.o(i.main) refers to hc32f460_pwc.o(i.PWC_Fcg1PeriphClockCmd) for PWC_Fcg1PeriphClockCmd
+    main.o(i.main) refers to main.o(i.Master_Initialize) for Master_Initialize
+    main.o(i.main) refers to ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_GetStatus) for BSP_KEY_GetStatus
+    main.o(i.main) refers to hc32f460_utility.o(i.Ddl_Delay1ms) for Ddl_Delay1ms
+    main.o(i.main) refers to main.o(i.I2C_Master_Transmit) for I2C_Master_Transmit
+    main.o(i.main) refers to main.o(i.I2C_Master_Receive) for I2C_Master_Receive
+    main.o(i.main) refers to ev_hc32f460_lqfp100_v1.o(i.BSP_LED_Toggle) for BSP_LED_Toggle
+    hc32f460_pwc.o(i.PWC_ClearWakeup0Flag) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_ClearWakeup1Flag) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_ClkBackup) refers to hc32f460_pwc.o(i.PWC_enClockBackup) for PWC_enClockBackup
+    hc32f460_pwc.o(i.PWC_ClkBackup) refers to hc32f460_pwc.o(.data) for u8StopFlag
+    hc32f460_pwc.o(i.PWC_ClkRecover) refers to hc32f460_pwc.o(i.PWC_enClockRecover) for PWC_enClockRecover
+    hc32f460_pwc.o(i.PWC_ClkRecover) refers to hc32f460_pwc.o(.data) for u8StopFlag
+    hc32f460_pwc.o(i.PWC_EnterStopMd) refers to hc32f460_pwc.o(i.PWC_enNvicBackup) for PWC_enNvicBackup
+    hc32f460_pwc.o(i.PWC_EnterStopMd) refers to hc32f460_pwc.o(i.PWC_ClkBackup) for PWC_ClkBackup
+    hc32f460_pwc.o(i.PWC_EnterStopMd) refers to hc32f460_pwc.o(i.PWC_ClkRecover) for PWC_ClkRecover
+    hc32f460_pwc.o(i.PWC_EnterStopMd) refers to hc32f460_pwc.o(i.PWC_enNvicRecover) for PWC_enNvicRecover
+    hc32f460_pwc.o(i.PWC_ExVccCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_Fcg0PeriphClockCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_Fcg1PeriphClockCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_Fcg2PeriphClockCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_Fcg3PeriphClockCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_GetWakeup0Flag) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_GetWakeup1Flag) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_HP2HS) refers to hc32f460_utility.o(i.Ddl_Delay1ms) for Ddl_Delay1ms
+    hc32f460_pwc.o(i.PWC_HP2LS) refers to hc32f460_utility.o(i.Ddl_Delay1ms) for Ddl_Delay1ms
+    hc32f460_pwc.o(i.PWC_HS2HP) refers to hc32f460_utility.o(i.Ddl_Delay1ms) for Ddl_Delay1ms
+    hc32f460_pwc.o(i.PWC_HS2LS) refers to hc32f460_utility.o(i.Ddl_Delay1ms) for Ddl_Delay1ms
+    hc32f460_pwc.o(i.PWC_HrcPwrCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_IrqClkBackup) refers to hc32f460_pwc.o(i.PWC_enClockBackup) for PWC_enClockBackup
+    hc32f460_pwc.o(i.PWC_IrqClkBackup) refers to hc32f460_pwc.o(.data) for u8StopFlag
+    hc32f460_pwc.o(i.PWC_IrqClkRecover) refers to hc32f460_pwc.o(i.PWC_enClockRecover) for PWC_enClockRecover
+    hc32f460_pwc.o(i.PWC_IrqClkRecover) refers to hc32f460_pwc.o(.data) for u8WkupIntCnt
+    hc32f460_pwc.o(i.PWC_LS2HP) refers to hc32f460_utility.o(i.Ddl_Delay1ms) for Ddl_Delay1ms
+    hc32f460_pwc.o(i.PWC_LS2HS) refers to hc32f460_utility.o(i.Ddl_Delay1ms) for Ddl_Delay1ms
+    hc32f460_pwc.o(i.PWC_PdWakeup0Cmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_PdWakeup1Cmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_PdWakeup2Cmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_PdWakeupEvtEdgeCfg) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_PllPwrCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_PowerModeCfg) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_Pvd1Cmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_Pvd2Cmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_PvdCfg) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_PwrMonitorCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_RamOpMdConfig) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_RamPwrdownCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_SetSysClk) refers to hc32f460_utility.o(i.Ddl_Delay1us) for Ddl_Delay1us
+    hc32f460_pwc.o(i.PWC_SetSysClk) refers to system_hc32f460.o(i.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    hc32f460_pwc.o(i.PWC_StopModeCfg) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_StopWkupCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_WktmControl) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_Xtal32CsCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_pwc.o(i.PWC_enClockBackup) refers to hc32f460_pwc.o(i.PWC_SetSysClk) for PWC_SetSysClk
+    hc32f460_pwc.o(i.PWC_enClockBackup) refers to hc32f460_pwc.o(.data) for u8HrcState
+    hc32f460_pwc.o(i.PWC_enClockRecover) refers to hc32f460_pwc.o(i.PWC_SetSysClk) for PWC_SetSysClk
+    hc32f460_pwc.o(i.PWC_enClockRecover) refers to hc32f460_pwc.o(.data) for u8SysClkSrc
+    hc32f460_pwc.o(i.PWC_enNvicBackup) refers to hc32f460_pwc.o(i.__NVIC_DisableIRQ) for __NVIC_DisableIRQ
+    hc32f460_pwc.o(i.PWC_enNvicBackup) refers to hc32f460_pwc.o(.bss) for NVIC_ISER_BAK
+    hc32f460_pwc.o(i.PWC_enNvicRecover) refers to hc32f460_pwc.o(.bss) for NVIC_ISER_BAK
+    hc32f460_efm.o(i.EFM_DataCacheRstCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_efm.o(i.EFM_ErasePgmCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_efm.o(i.EFM_FlashCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_efm.o(i.EFM_GetFlagStatus) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_efm.o(i.EFM_InstructionCacheCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_efm.o(i.EFM_InterruptCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_efm.o(i.EFM_MassErase) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_efm.o(i.EFM_MassErase) refers to hc32f460_efm.o(i.EFM_ClearFlag) for EFM_ClearFlag
+    hc32f460_efm.o(i.EFM_MassErase) refers to hc32f460_efm.o(i.EFM_ErasePgmCmd) for EFM_ErasePgmCmd
+    hc32f460_efm.o(i.EFM_Memcpy) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_efm.o(i.EFM_OtpLock) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_efm.o(i.EFM_OtpLock) refers to hc32f460_efm.o(i.EFM_ErasePgmCmd) for EFM_ErasePgmCmd
+    hc32f460_efm.o(i.EFM_OtpLock) refers to hc32f460_efm.o(i.EFM_ClearFlag) for EFM_ClearFlag
+    hc32f460_efm.o(i.EFM_SectorErase) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_efm.o(i.EFM_SectorErase) refers to hc32f460_efm.o(i.EFM_ClearFlag) for EFM_ClearFlag
+    hc32f460_efm.o(i.EFM_SectorErase) refers to hc32f460_efm.o(i.EFM_ErasePgmCmd) for EFM_ErasePgmCmd
+    hc32f460_efm.o(i.EFM_SequenceProgram) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_efm.o(i.EFM_SequenceProgram) refers to hc32f460_efm.o(i.EFM_ClearFlag) for EFM_ClearFlag
+    hc32f460_efm.o(i.EFM_SequenceProgram) refers to hc32f460_efm.o(i.EFM_ErasePgmCmd) for EFM_ErasePgmCmd
+    hc32f460_efm.o(i.EFM_SequenceProgram) refers to hc32f460_efm.o(i.EFM_Memcpy) for EFM_Memcpy
+    hc32f460_efm.o(i.EFM_SetErasePgmMode) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_efm.o(i.EFM_SetLatency) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_efm.o(i.EFM_SetReadMode) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_efm.o(i.EFM_SingleProgram) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_efm.o(i.EFM_SingleProgram) refers to hc32f460_efm.o(i.EFM_ClearFlag) for EFM_ClearFlag
+    hc32f460_efm.o(i.EFM_SingleProgram) refers to hc32f460_efm.o(i.EFM_ErasePgmCmd) for EFM_ErasePgmCmd
+    hc32f460_efm.o(i.EFM_SingleProgramRB) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_efm.o(i.EFM_SingleProgramRB) refers to hc32f460_efm.o(i.EFM_ClearFlag) for EFM_ClearFlag
+    hc32f460_efm.o(i.EFM_SingleProgramRB) refers to hc32f460_efm.o(i.EFM_ErasePgmCmd) for EFM_ErasePgmCmd
+    hc32f460_interrupts.o(i.IRQ000_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ001_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ002_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ003_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ004_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ005_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ006_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ007_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ008_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ009_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ010_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ011_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ012_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ013_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ014_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ015_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ016_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ017_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ018_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ019_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ020_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ021_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ022_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ023_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ024_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ025_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ026_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ027_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ028_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ029_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ030_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ031_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ032_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ033_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ034_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ035_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ036_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ037_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ038_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ039_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ040_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ041_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ042_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ043_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ044_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ045_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ046_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ047_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ048_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ049_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ050_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ051_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ052_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ053_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ054_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ055_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ056_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ057_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ058_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ059_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ060_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ061_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ062_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ063_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ064_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ065_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ066_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ067_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ068_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ069_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ070_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ071_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ072_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ073_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ074_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ075_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ076_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ077_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ078_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ079_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ080_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ081_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ082_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ083_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ084_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ085_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ086_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ087_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ088_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ089_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ090_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ091_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ092_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ093_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ094_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ095_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ096_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ097_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ098_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ099_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ100_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ101_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ102_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ103_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ104_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ105_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ106_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ107_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ108_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ109_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ110_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ111_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ112_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ113_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ114_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ115_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ116_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ117_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ118_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ119_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ120_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ121_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ122_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ123_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ124_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ125_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ126_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.IRQ127_Handler) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.NMI_Handler) refers (Weak) to hc32f460_exint_nmi_swi.o(i.NMI_IrqHandler) for NMI_IrqHandler
+    hc32f460_interrupts.o(i.enIrqRegistration) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_interrupts.o(i.enIrqRegistration) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_interrupts.o(i.enIrqResign) refers to hc32f460_interrupts.o(.bss) for IrqHandler
+    hc32f460_utility.o(i.Ddl_Delay1ms) refers to system_hc32f460.o(.data) for SystemCoreClock
+    hc32f460_utility.o(i.Ddl_Delay1us) refers to system_hc32f460.o(.data) for SystemCoreClock
+    hc32f460_utility.o(i.SysTick_Delay) refers to hc32f460_utility.o(i.SysTick_GetTick) for SysTick_GetTick
+    hc32f460_utility.o(i.SysTick_Delay) refers to hc32f460_utility.o(.data) for m_u32TickStep
+    hc32f460_utility.o(i.SysTick_GetTick) refers to hc32f460_utility.o(.data) for m_u32TickCount
+    hc32f460_utility.o(i.SysTick_IncTick) refers to hc32f460_utility.o(.data) for m_u32TickCount
+    hc32f460_utility.o(i.SysTick_Init) refers to hc32f460_utility.o(.data) for m_u32TickStep
+    hc32f460_utility.o(i.SysTick_Init) refers to system_hc32f460.o(.data) for SystemCoreClock
+    hc32f460_exint_nmi_swi.o(i.EXINT_Init) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_exint_nmi_swi.o(i.EXINT_IrqFlgGet) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_exint_nmi_swi.o(i.NMI_DeInit) refers to hc32f460_exint_nmi_swi.o(.data) for pfnNmiCallback
+    hc32f460_exint_nmi_swi.o(i.NMI_Init) refers to hc32f460_exint_nmi_swi.o(.data) for pfnNmiCallback
+    hc32f460_exint_nmi_swi.o(i.NMI_IrqFlgGet) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_exint_nmi_swi.o(i.NMI_IrqHandler) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_exint_nmi_swi.o(i.NMI_IrqHandler) refers to hc32f460_exint_nmi_swi.o(.data) for pfnNmiCallback
+    hc32f460_sram.o(i.SRAM_ClrStatus) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_sram.o(i.SRAM_GetStatus) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_sram.o(i.SRAM_Init) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_sram.o(i.SRAM_Init) refers to hc32f460_sram.o(i.SRAM_WT_Enable) for SRAM_WT_Enable
+    hc32f460_sram.o(i.SRAM_Init) refers to hc32f460_sram.o(i.SRAM_CK_Enable) for SRAM_CK_Enable
+    hc32f460_sram.o(i.SRAM_Init) refers to hc32f460_sram.o(i.SRAM_WT_Disable) for SRAM_WT_Disable
+    hc32f460_sram.o(i.SRAM_Init) refers to hc32f460_sram.o(i.SRAM_CK_Disable) for SRAM_CK_Disable
+    hc32f460_i2c.o(i.I2C_AckConfig) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_AnalogFilterCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_BaudrateConfig) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_BaudrateConfig) refers to ffltui.o(.text) for __aeabi_ui2f
+    hc32f460_i2c.o(i.I2C_BaudrateConfig) refers to fdiv.o(.text) for __aeabi_fdiv
+    hc32f460_i2c.o(i.I2C_BaudrateConfig) refers to fmul.o(.text) for __aeabi_fmul
+    hc32f460_i2c.o(i.I2C_BaudrateConfig) refers to fadd.o(.text) for __aeabi_fadd
+    hc32f460_i2c.o(i.I2C_BaudrateConfig) refers to ffixui.o(.text) for __aeabi_f2uiz
+    hc32f460_i2c.o(i.I2C_BaudrateConfig) refers to cfrcmple.o(.text) for __aeabi_cfrcmple
+    hc32f460_i2c.o(i.I2C_BaudrateConfig) refers to cfcmple.o(.text) for __aeabi_cfcmple
+    hc32f460_i2c.o(i.I2C_BaudrateConfig) refers to system_hc32f460.o(.data) for SystemCoreClock
+    hc32f460_i2c.o(i.I2C_BusWaitCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_ClearStatus) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_ClkTimeOutConfig) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_Cmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_DeInit) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_DigitalFilterCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_DigitalFilterConfig) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_FastAckCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_GeneralCallCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_GenerateReStart) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_GenerateStart) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_GenerateStop) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_GetStatus) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_Init) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_Init) refers to hc32f460_i2c.o(i.I2C_BaudrateConfig) for I2C_BaudrateConfig
+    hc32f460_i2c.o(i.I2C_IntCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_MasterDataReceiveAndStop) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_MasterDataReceiveAndStop) refers to hc32f460_i2c.o(i.I2C_WaitStatus) for I2C_WaitStatus
+    hc32f460_i2c.o(i.I2C_MasterDataReceiveAndStop) refers to hc32f460_i2c.o(i.I2C_AckConfig) for I2C_AckConfig
+    hc32f460_i2c.o(i.I2C_MasterDataReceiveAndStop) refers to hc32f460_i2c.o(i.I2C_ClearStatus) for I2C_ClearStatus
+    hc32f460_i2c.o(i.I2C_MasterDataReceiveAndStop) refers to hc32f460_i2c.o(i.I2C_GenerateStop) for I2C_GenerateStop
+    hc32f460_i2c.o(i.I2C_MasterDataReceiveAndStop) refers to hc32f460_i2c.o(i.I2C_ReadData) for I2C_ReadData
+    hc32f460_i2c.o(i.I2C_ReadData) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_ReceiveData) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_ReceiveData) refers to hc32f460_i2c.o(i.I2C_WaitStatus) for I2C_WaitStatus
+    hc32f460_i2c.o(i.I2C_ReceiveData) refers to hc32f460_i2c.o(i.I2C_AckConfig) for I2C_AckConfig
+    hc32f460_i2c.o(i.I2C_ReceiveData) refers to hc32f460_i2c.o(i.I2C_ReadData) for I2C_ReadData
+    hc32f460_i2c.o(i.I2C_Restart) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_Restart) refers to hc32f460_i2c.o(i.I2C_ClearStatus) for I2C_ClearStatus
+    hc32f460_i2c.o(i.I2C_Restart) refers to hc32f460_i2c.o(i.I2C_GenerateReStart) for I2C_GenerateReStart
+    hc32f460_i2c.o(i.I2C_Restart) refers to hc32f460_i2c.o(i.I2C_WaitStatus) for I2C_WaitStatus
+    hc32f460_i2c.o(i.I2C_SlaveAdr0Config) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_SlaveAdr1Config) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_SmBusCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_SmbusConfig) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_SoftwareResetCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_Start) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_Start) refers to hc32f460_i2c.o(i.I2C_WaitStatus) for I2C_WaitStatus
+    hc32f460_i2c.o(i.I2C_Start) refers to hc32f460_i2c.o(i.I2C_GenerateStart) for I2C_GenerateStart
+    hc32f460_i2c.o(i.I2C_Stop) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_Stop) refers to hc32f460_i2c.o(i.I2C_ClearStatus) for I2C_ClearStatus
+    hc32f460_i2c.o(i.I2C_Stop) refers to hc32f460_i2c.o(i.I2C_GetStatus) for I2C_GetStatus
+    hc32f460_i2c.o(i.I2C_Stop) refers to hc32f460_i2c.o(i.I2C_GenerateStop) for I2C_GenerateStop
+    hc32f460_i2c.o(i.I2C_Stop) refers to hc32f460_i2c.o(i.I2C_WaitStatus) for I2C_WaitStatus
+    hc32f460_i2c.o(i.I2C_Trans10BitAddr) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_Trans10BitAddr) refers to hc32f460_i2c.o(i.I2C_WaitStatus) for I2C_WaitStatus
+    hc32f460_i2c.o(i.I2C_Trans10BitAddr) refers to hc32f460_i2c.o(i.I2C_WriteData) for I2C_WriteData
+    hc32f460_i2c.o(i.I2C_Trans10BitAddr) refers to hc32f460_i2c.o(i.I2C_GetStatus) for I2C_GetStatus
+    hc32f460_i2c.o(i.I2C_Trans10BitAddr) refers to hc32f460_i2c.o(i.I2C_ClearStatus) for I2C_ClearStatus
+    hc32f460_i2c.o(i.I2C_Trans10BitAddr) refers to hc32f460_i2c.o(i.I2C_GenerateReStart) for I2C_GenerateReStart
+    hc32f460_i2c.o(i.I2C_TransAddr) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_TransAddr) refers to hc32f460_i2c.o(i.I2C_WaitStatus) for I2C_WaitStatus
+    hc32f460_i2c.o(i.I2C_TransAddr) refers to hc32f460_i2c.o(i.I2C_WriteData) for I2C_WriteData
+    hc32f460_i2c.o(i.I2C_TransAddr) refers to hc32f460_i2c.o(i.I2C_GetStatus) for I2C_GetStatus
+    hc32f460_i2c.o(i.I2C_TransData) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_i2c.o(i.I2C_TransData) refers to hc32f460_i2c.o(i.I2C_WaitStatus) for I2C_WaitStatus
+    hc32f460_i2c.o(i.I2C_TransData) refers to hc32f460_i2c.o(i.I2C_WriteData) for I2C_WriteData
+    hc32f460_i2c.o(i.I2C_TransData) refers to hc32f460_i2c.o(i.I2C_GetStatus) for I2C_GetStatus
+    hc32f460_i2c.o(i.I2C_TransData) refers to hc32f460_i2c.o(i.I2C_ClearStatus) for I2C_ClearStatus
+    hc32f460_i2c.o(i.I2C_WriteData) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_keyscan.o(i.KEYSCAN_Init) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_ClearFcmFlag) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_FcmCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_FcmConfig) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_GetClockFreq) refers to system_hc32f460.o(.data) for HRC_VALUE
+    hc32f460_clk.o(i.CLK_GetFcmFlag) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_GetFlagStatus) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_GetPllClockFreq) refers to system_hc32f460.o(.data) for HRC_VALUE
+    hc32f460_clk.o(i.CLK_HrcCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_HrcCmd) refers to hc32f460_clk.o(i.CLK_GetFlagStatus) for CLK_GetFlagStatus
+    hc32f460_clk.o(i.CLK_LrcCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_MpllCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_MpllCmd) refers to hc32f460_clk.o(i.CLK_GetFlagStatus) for CLK_GetFlagStatus
+    hc32f460_clk.o(i.CLK_MpllConfig) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_MpllConfig) refers to system_hc32f460.o(.data) for HRC_VALUE
+    hc32f460_clk.o(i.CLK_MrcCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_OutputClkCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_OutputClkConfig) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_SetI2sClkSource) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_SetPeriClkSource) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_SetPllSource) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_SetSysClkSource) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_SetSysClkSource) refers to system_hc32f460.o(i.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    hc32f460_clk.o(i.CLK_SetUsbClkSource) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_SysClkConfig) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_TpiuClkCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_TpiuClkConfig) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_UpllCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_UpllCmd) refers to hc32f460_clk.o(i.CLK_GetFlagStatus) for CLK_GetFlagStatus
+    hc32f460_clk.o(i.CLK_UpllConfig) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_UpllConfig) refers to system_hc32f460.o(.data) for HRC_VALUE
+    hc32f460_clk.o(i.CLK_Xtal32Cmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_XtalCmd) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_clk.o(i.CLK_XtalCmd) refers to hc32f460_clk.o(i.CLK_GetFlagStatus) for CLK_GetFlagStatus
+    hc32f460_clk.o(i.CLK_XtalStbConfig) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_gpio.o(i.PORT_AlwaysOn) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_gpio.o(i.PORT_AlwaysOn) refers to hc32f460_gpio.o(i.PORT_Unlock) for PORT_Unlock
+    hc32f460_gpio.o(i.PORT_AlwaysOn) refers to hc32f460_gpio.o(i.PORT_Lock) for PORT_Lock
+    hc32f460_gpio.o(i.PORT_DeInit) refers to hc32f460_gpio.o(i.PORT_Unlock) for PORT_Unlock
+    hc32f460_gpio.o(i.PORT_DeInit) refers to hc32f460_gpio.o(i.PORT_Lock) for PORT_Lock
+    hc32f460_gpio.o(i.PORT_DebugPortSetting) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_gpio.o(i.PORT_DebugPortSetting) refers to hc32f460_gpio.o(i.PORT_Unlock) for PORT_Unlock
+    hc32f460_gpio.o(i.PORT_DebugPortSetting) refers to hc32f460_gpio.o(i.PORT_Lock) for PORT_Lock
+    hc32f460_gpio.o(i.PORT_GetBit) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_gpio.o(i.PORT_GetData) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_gpio.o(i.PORT_Init) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_gpio.o(i.PORT_Init) refers to hc32f460_gpio.o(i.PORT_Unlock) for PORT_Unlock
+    hc32f460_gpio.o(i.PORT_Init) refers to hc32f460_gpio.o(i.PORT_Lock) for PORT_Lock
+    hc32f460_gpio.o(i.PORT_OE) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_gpio.o(i.PORT_PubSetting) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_gpio.o(i.PORT_PubSetting) refers to hc32f460_gpio.o(i.PORT_Unlock) for PORT_Unlock
+    hc32f460_gpio.o(i.PORT_PubSetting) refers to hc32f460_gpio.o(i.PORT_Lock) for PORT_Lock
+    hc32f460_gpio.o(i.PORT_ResetBits) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_gpio.o(i.PORT_ResetPortData) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_gpio.o(i.PORT_SetBits) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_gpio.o(i.PORT_SetFunc) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_gpio.o(i.PORT_SetFunc) refers to hc32f460_gpio.o(i.PORT_Unlock) for PORT_Unlock
+    hc32f460_gpio.o(i.PORT_SetFunc) refers to hc32f460_gpio.o(i.PORT_Lock) for PORT_Lock
+    hc32f460_gpio.o(i.PORT_SetPortData) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_gpio.o(i.PORT_SetSubFunc) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    hc32f460_gpio.o(i.PORT_SetSubFunc) refers to hc32f460_gpio.o(i.PORT_Unlock) for PORT_Unlock
+    hc32f460_gpio.o(i.PORT_SetSubFunc) refers to hc32f460_gpio.o(i.PORT_Lock) for PORT_Lock
+    hc32f460_gpio.o(i.PORT_Toggle) refers to hc32f460_utility.o(i.Ddl_AssertHandler) for Ddl_AssertHandler
+    ev_hc32f460_lqfp100_v1.o(i.BSP_CLK_Init) refers to memseta.o(.text) for __aeabi_memclr4
+    ev_hc32f460_lqfp100_v1.o(i.BSP_CLK_Init) refers to hc32f460_clk.o(i.CLK_SysClkConfig) for CLK_SysClkConfig
+    ev_hc32f460_lqfp100_v1.o(i.BSP_CLK_Init) refers to hc32f460_clk.o(i.CLK_XtalConfig) for CLK_XtalConfig
+    ev_hc32f460_lqfp100_v1.o(i.BSP_CLK_Init) refers to hc32f460_clk.o(i.CLK_XtalCmd) for CLK_XtalCmd
+    ev_hc32f460_lqfp100_v1.o(i.BSP_CLK_Init) refers to hc32f460_sram.o(i.SRAM_Init) for SRAM_Init
+    ev_hc32f460_lqfp100_v1.o(i.BSP_CLK_Init) refers to hc32f460_efm.o(i.EFM_Unlock) for EFM_Unlock
+    ev_hc32f460_lqfp100_v1.o(i.BSP_CLK_Init) refers to hc32f460_efm.o(i.EFM_SetLatency) for EFM_SetLatency
+    ev_hc32f460_lqfp100_v1.o(i.BSP_CLK_Init) refers to hc32f460_efm.o(i.EFM_Lock) for EFM_Lock
+    ev_hc32f460_lqfp100_v1.o(i.BSP_CLK_Init) refers to hc32f460_clk.o(i.CLK_SetPllSource) for CLK_SetPllSource
+    ev_hc32f460_lqfp100_v1.o(i.BSP_CLK_Init) refers to hc32f460_clk.o(i.CLK_MpllConfig) for CLK_MpllConfig
+    ev_hc32f460_lqfp100_v1.o(i.BSP_CLK_Init) refers to hc32f460_clk.o(i.CLK_MpllCmd) for CLK_MpllCmd
+    ev_hc32f460_lqfp100_v1.o(i.BSP_CLK_Init) refers to hc32f460_clk.o(i.CLK_GetFlagStatus) for CLK_GetFlagStatus
+    ev_hc32f460_lqfp100_v1.o(i.BSP_CLK_Init) refers to hc32f460_pwc.o(i.PWC_HS2HP) for PWC_HS2HP
+    ev_hc32f460_lqfp100_v1.o(i.BSP_CLK_Init) refers to hc32f460_clk.o(i.CLK_SetSysClkSource) for CLK_SetSysClkSource
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_COL_Init) refers to hc32f460_gpio.o(i.PORT_Init) for PORT_Init
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_COL_Init) refers to hc32f460_gpio.o(i.PORT_SetFunc) for PORT_SetFunc
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_COL_Init) refers to hc32f460_pwc.o(i.PWC_Fcg0PeriphClockCmd) for PWC_Fcg0PeriphClockCmd
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_COL_Init) refers to hc32f460_clk.o(i.CLK_LrcCmd) for CLK_LrcCmd
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_COL_Init) refers to hc32f460_keyscan.o(i.KEYSCAN_Init) for KEYSCAN_Init
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_COL_Init) refers to ev_hc32f460_lqfp100_v1.o(.constdata) for BSP_KEYOUT_PORT_PIN
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_GetStatus) refers to ev_hc32f460_lqfp100_v1.o(.data) for gu32GlobalKey
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_Init) refers to ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW_Init) for BSP_KEY_ROW_Init
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_Init) refers to ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_COL_Init) for BSP_KEY_COL_Init
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_Init) refers to hc32f460_exint_nmi_swi.o(i.EXINT_IrqFlgClr) for EXINT_IrqFlgClr
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_Init) refers to hc32f460_keyscan.o(i.KEYSCAN_Start) for KEYSCAN_Start
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_Init) refers to ev_hc32f460_lqfp100_v1.o(.constdata) for BSP_KEYIN_PORT_PIN
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY2_IrqHandler) refers to hc32f460_gpio.o(i.PORT_GetBit) for PORT_GetBit
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY2_IrqHandler) refers to hc32f460_exint_nmi_swi.o(i.EXINT_IrqFlgClr) for EXINT_IrqFlgClr
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY2_IrqHandler) refers to ev_hc32f460_lqfp100_v1.o(.data) for gu32GlobalKey
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY3_IrqHandler) refers to hc32f460_gpio.o(i.PORT_GetBit) for PORT_GetBit
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY3_IrqHandler) refers to hc32f460_exint_nmi_swi.o(i.EXINT_IrqFlgClr) for EXINT_IrqFlgClr
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY3_IrqHandler) refers to ev_hc32f460_lqfp100_v1.o(.data) for gu32GlobalKey
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY4_IrqHandler) refers to hc32f460_gpio.o(i.PORT_GetBit) for PORT_GetBit
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY4_IrqHandler) refers to hc32f460_exint_nmi_swi.o(i.EXINT_IrqFlgClr) for EXINT_IrqFlgClr
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY4_IrqHandler) refers to ev_hc32f460_lqfp100_v1.o(.data) for gu32GlobalKey
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY5_IrqHandler) refers to hc32f460_gpio.o(i.PORT_GetBit) for PORT_GetBit
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY5_IrqHandler) refers to hc32f460_exint_nmi_swi.o(i.EXINT_IrqFlgClr) for EXINT_IrqFlgClr
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY5_IrqHandler) refers to ev_hc32f460_lqfp100_v1.o(.data) for gu32GlobalKey
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW0_IrqCallback) refers to hc32f460_keyscan.o(i.KEYSCAN_GetColIdx) for KEYSCAN_GetColIdx
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW0_IrqCallback) refers to hc32f460_exint_nmi_swi.o(i.EXINT_IrqFlgGet) for EXINT_IrqFlgGet
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW0_IrqCallback) refers to hc32f460_gpio.o(i.PORT_GetBit) for PORT_GetBit
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW0_IrqCallback) refers to hc32f460_exint_nmi_swi.o(i.EXINT_IrqFlgClr) for EXINT_IrqFlgClr
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW0_IrqCallback) refers to ev_hc32f460_lqfp100_v1.o(.constdata) for BSP_KEYIN_PORT_PIN
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW0_IrqCallback) refers to ev_hc32f460_lqfp100_v1.o(.data) for gu32GlobalKey
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW1_IrqCallback) refers to hc32f460_keyscan.o(i.KEYSCAN_GetColIdx) for KEYSCAN_GetColIdx
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW1_IrqCallback) refers to hc32f460_exint_nmi_swi.o(i.EXINT_IrqFlgGet) for EXINT_IrqFlgGet
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW1_IrqCallback) refers to hc32f460_gpio.o(i.PORT_GetBit) for PORT_GetBit
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW1_IrqCallback) refers to hc32f460_exint_nmi_swi.o(i.EXINT_IrqFlgClr) for EXINT_IrqFlgClr
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW1_IrqCallback) refers to ev_hc32f460_lqfp100_v1.o(.constdata) for BSP_KEYIN_PORT_PIN
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW1_IrqCallback) refers to ev_hc32f460_lqfp100_v1.o(.data) for gu32GlobalKey
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW2_IrqCallback) refers to hc32f460_keyscan.o(i.KEYSCAN_GetColIdx) for KEYSCAN_GetColIdx
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW2_IrqCallback) refers to hc32f460_exint_nmi_swi.o(i.EXINT_IrqFlgGet) for EXINT_IrqFlgGet
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW2_IrqCallback) refers to hc32f460_gpio.o(i.PORT_GetBit) for PORT_GetBit
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW2_IrqCallback) refers to hc32f460_exint_nmi_swi.o(i.EXINT_IrqFlgClr) for EXINT_IrqFlgClr
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW2_IrqCallback) refers to ev_hc32f460_lqfp100_v1.o(.constdata) for BSP_KEYIN_PORT_PIN
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW2_IrqCallback) refers to ev_hc32f460_lqfp100_v1.o(.data) for gu32GlobalKey
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW_Init) refers to hc32f460_gpio.o(i.PORT_Init) for PORT_Init
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW_Init) refers to hc32f460_exint_nmi_swi.o(i.EXINT_Init) for EXINT_Init
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW_Init) refers to hc32f460_interrupts.o(i.enIrqRegistration) for enIrqRegistration
+    ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW_Init) refers to ev_hc32f460_lqfp100_v1.o(.constdata) for BSP_KEYIN_PORT_PIN
+    ev_hc32f460_lqfp100_v1.o(i.BSP_LED_Init) refers to hc32f460_gpio.o(i.PORT_Init) for PORT_Init
+    ev_hc32f460_lqfp100_v1.o(i.BSP_LED_Init) refers to ev_hc32f460_lqfp100_v1.o(.constdata) for BSP_LED_PORT_PIN
+    ev_hc32f460_lqfp100_v1.o(i.BSP_LED_Off) refers to hc32f460_gpio.o(i.PORT_ResetBits) for PORT_ResetBits
+    ev_hc32f460_lqfp100_v1.o(i.BSP_LED_Off) refers to ev_hc32f460_lqfp100_v1.o(.constdata) for BSP_LED_PORT_PIN
+    ev_hc32f460_lqfp100_v1.o(i.BSP_LED_On) refers to hc32f460_gpio.o(i.PORT_SetBits) for PORT_SetBits
+    ev_hc32f460_lqfp100_v1.o(i.BSP_LED_On) refers to ev_hc32f460_lqfp100_v1.o(.constdata) for BSP_LED_PORT_PIN
+    ev_hc32f460_lqfp100_v1.o(i.BSP_LED_Toggle) refers to hc32f460_gpio.o(i.PORT_Toggle) for PORT_Toggle
+    ev_hc32f460_lqfp100_v1.o(i.BSP_LED_Toggle) refers to ev_hc32f460_lqfp100_v1.o(.constdata) for BSP_LED_PORT_PIN
+    ev_hc32f460_lqfp100_v1.o(i.BSP_PRINTF_PortInit) refers to hc32f460_gpio.o(i.PORT_SetFunc) for PORT_SetFunc
+    ev_hc32f460_lqfp100_v1.o(.constdata) refers to ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW0_IrqCallback) for BSP_KEY_ROW0_IrqCallback
+    ev_hc32f460_lqfp100_v1.o(.constdata) refers to ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW1_IrqCallback) for BSP_KEY_ROW1_IrqCallback
+    ev_hc32f460_lqfp100_v1.o(.constdata) refers to ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW2_IrqCallback) for BSP_KEY_ROW2_IrqCallback
+    ev_hc32f460_lqfp100_v1.o(.constdata) refers to ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY2_IrqHandler) for BSP_KEY_KEY2_IrqHandler
+    ev_hc32f460_lqfp100_v1.o(.constdata) refers to ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY3_IrqHandler) for BSP_KEY_KEY3_IrqHandler
+    ev_hc32f460_lqfp100_v1.o(.constdata) refers to ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY4_IrqHandler) for BSP_KEY_KEY4_IrqHandler
+    ev_hc32f460_lqfp100_v1.o(.constdata) refers to ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY5_IrqHandler) for BSP_KEY_KEY5_IrqHandler
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    fadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fadd.o(.text) refers to fepilogue.o(.text) for _float_epilogue
+    fmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fdiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fdiv.o(.text) refers to fepilogue.o(.text) for _float_round
+    ffltui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ffltui.o(.text) refers to fepilogue.o(.text) for _float_epilogue
+    ffixui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cfcmple.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cfrcmple.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_hc32f460.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_hc32f460.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(i.main) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing startup_hc32f460.o(HEAP), (512 bytes).
+    Removing system_hc32f460.o(.rev16_text), (4 bytes).
+    Removing system_hc32f460.o(.revsh_text), (4 bytes).
+    Removing system_hc32f460.o(.rrx_text), (6 bytes).
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing main.o(.rrx_text), (6 bytes).
+    Removing hc32f460_pwc.o(.rev16_text), (4 bytes).
+    Removing hc32f460_pwc.o(.revsh_text), (4 bytes).
+    Removing hc32f460_pwc.o(.rrx_text), (6 bytes).
+    Removing hc32f460_pwc.o(i.PWC_ClearPvdFlag), (96 bytes).
+    Removing hc32f460_pwc.o(i.PWC_ClearWakeup0Flag), (132 bytes).
+    Removing hc32f460_pwc.o(i.PWC_ClearWakeup1Flag), (132 bytes).
+    Removing hc32f460_pwc.o(i.PWC_ClkBackup), (24 bytes).
+    Removing hc32f460_pwc.o(i.PWC_ClkRecover), (24 bytes).
+    Removing hc32f460_pwc.o(i.PWC_EnterPowerDownMd), (152 bytes).
+    Removing hc32f460_pwc.o(i.PWC_EnterSleepMd), (76 bytes).
+    Removing hc32f460_pwc.o(i.PWC_EnterStopMd), (96 bytes).
+    Removing hc32f460_pwc.o(i.PWC_ExVccCmd), (144 bytes).
+    Removing hc32f460_pwc.o(i.PWC_Fcg2PeriphClockCmd), (132 bytes).
+    Removing hc32f460_pwc.o(i.PWC_Fcg3PeriphClockCmd), (132 bytes).
+    Removing hc32f460_pwc.o(i.PWC_GetPvdFlag), (52 bytes).
+    Removing hc32f460_pwc.o(i.PWC_GetPvdStatus), (52 bytes).
+    Removing hc32f460_pwc.o(i.PWC_GetWakeup0Flag), (92 bytes).
+    Removing hc32f460_pwc.o(i.PWC_GetWakeup1Flag), (96 bytes).
+    Removing hc32f460_pwc.o(i.PWC_HP2HS), (72 bytes).
+    Removing hc32f460_pwc.o(i.PWC_HP2LS), (204 bytes).
+    Removing hc32f460_pwc.o(i.PWC_HS2LS), (200 bytes).
+    Removing hc32f460_pwc.o(i.PWC_HrcPwrCmd), (144 bytes).
+    Removing hc32f460_pwc.o(i.PWC_IrqClkBackup), (44 bytes).
+    Removing hc32f460_pwc.o(i.PWC_IrqClkRecover), (36 bytes).
+    Removing hc32f460_pwc.o(i.PWC_LS2HP), (192 bytes).
+    Removing hc32f460_pwc.o(i.PWC_LS2HS), (192 bytes).
+    Removing hc32f460_pwc.o(i.PWC_PdWakeup0Cmd), (176 bytes).
+    Removing hc32f460_pwc.o(i.PWC_PdWakeup1Cmd), (176 bytes).
+    Removing hc32f460_pwc.o(i.PWC_PdWakeup2Cmd), (176 bytes).
+    Removing hc32f460_pwc.o(i.PWC_PdWakeupEvtEdgeCfg), (176 bytes).
+    Removing hc32f460_pwc.o(i.PWC_PllPwrCmd), (144 bytes).
+    Removing hc32f460_pwc.o(i.PWC_PowerModeCfg), (300 bytes).
+    Removing hc32f460_pwc.o(i.PWC_Pvd1Cmd), (144 bytes).
+    Removing hc32f460_pwc.o(i.PWC_Pvd2Cmd), (144 bytes).
+    Removing hc32f460_pwc.o(i.PWC_PvdCfg), (648 bytes).
+    Removing hc32f460_pwc.o(i.PWC_PwrMonitorCmd), (144 bytes).
+    Removing hc32f460_pwc.o(i.PWC_RamOpMdConfig), (132 bytes).
+    Removing hc32f460_pwc.o(i.PWC_RamPwrdownCmd), (144 bytes).
+    Removing hc32f460_pwc.o(i.PWC_SetSysClk), (172 bytes).
+    Removing hc32f460_pwc.o(i.PWC_StopModeCfg), (264 bytes).
+    Removing hc32f460_pwc.o(i.PWC_StopWkupCmd), (104 bytes).
+    Removing hc32f460_pwc.o(i.PWC_WktmControl), (204 bytes).
+    Removing hc32f460_pwc.o(i.PWC_Xtal32CsCmd), (144 bytes).
+    Removing hc32f460_pwc.o(i.PWC_enClockBackup), (196 bytes).
+    Removing hc32f460_pwc.o(i.PWC_enClockRecover), (124 bytes).
+    Removing hc32f460_pwc.o(i.PWC_enNvicBackup), (736 bytes).
+    Removing hc32f460_pwc.o(i.PWC_enNvicRecover), (36 bytes).
+    Removing hc32f460_pwc.o(i.__NVIC_DisableIRQ), (36 bytes).
+    Removing hc32f460_pwc.o(.bss), (20 bytes).
+    Removing hc32f460_pwc.o(.data), (5 bytes).
+    Removing hc32f460_efm.o(.rev16_text), (4 bytes).
+    Removing hc32f460_efm.o(.revsh_text), (4 bytes).
+    Removing hc32f460_efm.o(.rrx_text), (6 bytes).
+    Removing hc32f460_efm.o(i.EFM_ClearFlag), (12 bytes).
+    Removing hc32f460_efm.o(i.EFM_DataCacheRstCmd), (88 bytes).
+    Removing hc32f460_efm.o(i.EFM_ErasePgmCmd), (88 bytes).
+    Removing hc32f460_efm.o(i.EFM_FlashCmd), (96 bytes).
+    Removing hc32f460_efm.o(i.EFM_GetFlagStatus), (116 bytes).
+    Removing hc32f460_efm.o(i.EFM_GetStatus), (104 bytes).
+    Removing hc32f460_efm.o(i.EFM_GetSwitchStatus), (20 bytes).
+    Removing hc32f460_efm.o(i.EFM_InstructionCacheCmd), (88 bytes).
+    Removing hc32f460_efm.o(i.EFM_InterruptCmd), (164 bytes).
+    Removing hc32f460_efm.o(i.EFM_MassErase), (220 bytes).
+    Removing hc32f460_efm.o(i.EFM_Memcpy), (120 bytes).
+    Removing hc32f460_efm.o(i.EFM_OtpLock), (172 bytes).
+    Removing hc32f460_efm.o(i.EFM_ReadUID), (40 bytes).
+    Removing hc32f460_efm.o(i.EFM_SectorErase), (220 bytes).
+    Removing hc32f460_efm.o(i.EFM_SequenceProgram), (352 bytes).
+    Removing hc32f460_efm.o(i.EFM_SetBusState), (20 bytes).
+    Removing hc32f460_efm.o(i.EFM_SetErasePgmMode), (168 bytes).
+    Removing hc32f460_efm.o(i.EFM_SetReadMode), (88 bytes).
+    Removing hc32f460_efm.o(i.EFM_SetWinProtectAddr), (40 bytes).
+    Removing hc32f460_efm.o(i.EFM_SingleProgram), (232 bytes).
+    Removing hc32f460_efm.o(i.EFM_SingleProgramRB), (232 bytes).
+    Removing hc32f460_icg.o(.rev16_text), (4 bytes).
+    Removing hc32f460_icg.o(.revsh_text), (4 bytes).
+    Removing hc32f460_icg.o(.rrx_text), (6 bytes).
+    Removing hc32f460_interrupts.o(.rev16_text), (4 bytes).
+    Removing hc32f460_interrupts.o(.revsh_text), (4 bytes).
+    Removing hc32f460_interrupts.o(.rrx_text), (6 bytes).
+    Removing hc32f460_interrupts.o(i.enEventDisable), (28 bytes).
+    Removing hc32f460_interrupts.o(i.enEventEnable), (28 bytes).
+    Removing hc32f460_interrupts.o(i.enIntDisable), (28 bytes).
+    Removing hc32f460_interrupts.o(i.enIntEnable), (28 bytes).
+    Removing hc32f460_interrupts.o(i.enIntWakeupDisable), (32 bytes).
+    Removing hc32f460_interrupts.o(i.enIntWakeupEnable), (32 bytes).
+    Removing hc32f460_interrupts.o(i.enIrqResign), (56 bytes).
+    Removing hc32f460_interrupts.o(i.enShareIrqDisable), (36 bytes).
+    Removing hc32f460_interrupts.o(i.enShareIrqEnable), (36 bytes).
+    Removing hc32f460_utility.o(.rev16_text), (4 bytes).
+    Removing hc32f460_utility.o(.revsh_text), (4 bytes).
+    Removing hc32f460_utility.o(.rrx_text), (6 bytes).
+    Removing hc32f460_utility.o(i.Ddl_Delay1us), (68 bytes).
+    Removing hc32f460_utility.o(i.SysTick_Delay), (76 bytes).
+    Removing hc32f460_utility.o(i.SysTick_GetTick), (12 bytes).
+    Removing hc32f460_utility.o(i.SysTick_IncTick), (24 bytes).
+    Removing hc32f460_utility.o(i.SysTick_Init), (128 bytes).
+    Removing hc32f460_utility.o(i.SysTick_Resume), (18 bytes).
+    Removing hc32f460_utility.o(i.SysTick_Suspend), (18 bytes).
+    Removing hc32f460_utility.o(.data), (8 bytes).
+    Removing hc32f460_exint_nmi_swi.o(.rev16_text), (4 bytes).
+    Removing hc32f460_exint_nmi_swi.o(.revsh_text), (4 bytes).
+    Removing hc32f460_exint_nmi_swi.o(.rrx_text), (6 bytes).
+    Removing hc32f460_exint_nmi_swi.o(i.NMI_DeInit), (24 bytes).
+    Removing hc32f460_exint_nmi_swi.o(i.NMI_Init), (72 bytes).
+    Removing hc32f460_exint_nmi_swi.o(i.NMI_IrqFlgClr), (20 bytes).
+    Removing hc32f460_exint_nmi_swi.o(i.NMI_IrqFlgGet), (268 bytes).
+    Removing hc32f460_exint_nmi_swi.o(i.SWI_Disable), (28 bytes).
+    Removing hc32f460_exint_nmi_swi.o(i.SWI_Enable), (28 bytes).
+    Removing hc32f460_sram.o(.rev16_text), (4 bytes).
+    Removing hc32f460_sram.o(.revsh_text), (4 bytes).
+    Removing hc32f460_sram.o(.rrx_text), (6 bytes).
+    Removing hc32f460_sram.o(i.SRAM_ClrStatus), (100 bytes).
+    Removing hc32f460_sram.o(i.SRAM_DeInit), (52 bytes).
+    Removing hc32f460_sram.o(i.SRAM_GetStatus), (112 bytes).
+    Removing hc32f460_i2c.o(.rev16_text), (4 bytes).
+    Removing hc32f460_i2c.o(.revsh_text), (4 bytes).
+    Removing hc32f460_i2c.o(.rrx_text), (6 bytes).
+    Removing hc32f460_i2c.o(i.I2C_AnalogFilterCmd), (128 bytes).
+    Removing hc32f460_i2c.o(i.I2C_ClkTimeOutConfig), (184 bytes).
+    Removing hc32f460_i2c.o(i.I2C_DigitalFilterCmd), (128 bytes).
+    Removing hc32f460_i2c.o(i.I2C_DigitalFilterConfig), (136 bytes).
+    Removing hc32f460_i2c.o(i.I2C_FastAckCmd), (144 bytes).
+    Removing hc32f460_i2c.o(i.I2C_GeneralCallCmd), (128 bytes).
+    Removing hc32f460_i2c.o(i.I2C_GenerateReStart), (124 bytes).
+    Removing hc32f460_i2c.o(i.I2C_IntCmd), (140 bytes).
+    Removing hc32f460_i2c.o(i.I2C_ReceiveData), (232 bytes).
+    Removing hc32f460_i2c.o(i.I2C_Restart), (136 bytes).
+    Removing hc32f460_i2c.o(i.I2C_SlaveAdr0Config), (232 bytes).
+    Removing hc32f460_i2c.o(i.I2C_SlaveAdr1Config), (232 bytes).
+    Removing hc32f460_i2c.o(i.I2C_SmBusCmd), (128 bytes).
+    Removing hc32f460_i2c.o(i.I2C_SmbusConfig), (220 bytes).
+    Removing hc32f460_i2c.o(i.I2C_Trans10BitAddr), (340 bytes).
+    Removing hc32f460_keyscan.o(.rev16_text), (4 bytes).
+    Removing hc32f460_keyscan.o(.revsh_text), (4 bytes).
+    Removing hc32f460_keyscan.o(.rrx_text), (6 bytes).
+    Removing hc32f460_keyscan.o(i.KEYSCAN_DeInit), (16 bytes).
+    Removing hc32f460_keyscan.o(i.KEYSCAN_Stop), (20 bytes).
+    Removing hc32f460_clk.o(.rev16_text), (4 bytes).
+    Removing hc32f460_clk.o(.revsh_text), (4 bytes).
+    Removing hc32f460_clk.o(.rrx_text), (6 bytes).
+    Removing hc32f460_clk.o(i.CLK_ClearFcmFlag), (144 bytes).
+    Removing hc32f460_clk.o(i.CLK_ClearXtalStdFlag), (72 bytes).
+    Removing hc32f460_clk.o(i.CLK_FcmCmd), (80 bytes).
+    Removing hc32f460_clk.o(i.CLK_FcmConfig), (824 bytes).
+    Removing hc32f460_clk.o(i.CLK_GetClockFreq), (300 bytes).
+    Removing hc32f460_clk.o(i.CLK_GetFcmCounter), (12 bytes).
+    Removing hc32f460_clk.o(i.CLK_GetFcmFlag), (128 bytes).
+    Removing hc32f460_clk.o(i.CLK_GetI2sClkSource), (88 bytes).
+    Removing hc32f460_clk.o(i.CLK_GetPllClockFreq), (592 bytes).
+    Removing hc32f460_clk.o(i.CLK_GetSysClkSource), (16 bytes).
+    Removing hc32f460_clk.o(i.CLK_HrcCmd), (264 bytes).
+    Removing hc32f460_clk.o(i.CLK_HrcTrim), (52 bytes).
+    Removing hc32f460_clk.o(i.CLK_LrcTrim), (52 bytes).
+    Removing hc32f460_clk.o(i.CLK_MrcCmd), (196 bytes).
+    Removing hc32f460_clk.o(i.CLK_MrcTrim), (52 bytes).
+    Removing hc32f460_clk.o(i.CLK_OutputClkCmd), (168 bytes).
+    Removing hc32f460_clk.o(i.CLK_OutputClkConfig), (324 bytes).
+    Removing hc32f460_clk.o(i.CLK_SetI2sClkSource), (216 bytes).
+    Removing hc32f460_clk.o(i.CLK_SetPeriClkSource), (132 bytes).
+    Removing hc32f460_clk.o(i.CLK_SetUsbClkSource), (144 bytes).
+    Removing hc32f460_clk.o(i.CLK_TpiuClkCmd), (132 bytes).
+    Removing hc32f460_clk.o(i.CLK_TpiuClkConfig), (136 bytes).
+    Removing hc32f460_clk.o(i.CLK_UpllCmd), (216 bytes).
+    Removing hc32f460_clk.o(i.CLK_UpllConfig), (456 bytes).
+    Removing hc32f460_clk.o(i.CLK_Xtal32Cmd), (196 bytes).
+    Removing hc32f460_clk.o(i.CLK_Xtal32Config), (84 bytes).
+    Removing hc32f460_clk.o(i.CLK_XtalStbConfig), (136 bytes).
+    Removing hc32f460_clk.o(i.CLK_XtalStpConfig), (120 bytes).
+    Removing hc32f460_gpio.o(.rev16_text), (4 bytes).
+    Removing hc32f460_gpio.o(.revsh_text), (4 bytes).
+    Removing hc32f460_gpio.o(.rrx_text), (6 bytes).
+    Removing hc32f460_gpio.o(i.PORT_AlwaysOn), (164 bytes).
+    Removing hc32f460_gpio.o(i.PORT_DeInit), (136 bytes).
+    Removing hc32f460_gpio.o(i.PORT_DebugPortSetting), (144 bytes).
+    Removing hc32f460_gpio.o(i.PORT_GetData), (104 bytes).
+    Removing hc32f460_gpio.o(i.PORT_OE), (128 bytes).
+    Removing hc32f460_gpio.o(i.PORT_PubSetting), (188 bytes).
+    Removing hc32f460_gpio.o(i.PORT_ResetBits), (112 bytes).
+    Removing hc32f460_gpio.o(i.PORT_ResetPortData), (112 bytes).
+    Removing hc32f460_gpio.o(i.PORT_SetBits), (112 bytes).
+    Removing hc32f460_gpio.o(i.PORT_SetPortData), (112 bytes).
+    Removing hc32f460_gpio.o(i.PORT_SetSubFunc), (160 bytes).
+    Removing ev_hc32f460_lqfp100_v1.o(.rev16_text), (4 bytes).
+    Removing ev_hc32f460_lqfp100_v1.o(.revsh_text), (4 bytes).
+    Removing ev_hc32f460_lqfp100_v1.o(.rrx_text), (6 bytes).
+    Removing ev_hc32f460_lqfp100_v1.o(i.BSP_LED_Off), (52 bytes).
+    Removing ev_hc32f460_lqfp100_v1.o(i.BSP_LED_On), (52 bytes).
+    Removing ev_hc32f460_lqfp100_v1.o(i.BSP_PRINTF_PortInit), (16 bytes).
+
+196 unused section(s) (total 21401 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      640  startup_hc32f460.o(RESET)
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
+    ../fplib/microlib/fpadd.c                0x00000000   Number         0  fadd.o ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  fdiv.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  fepilogue.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  ffixui.o ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  ffltui.o ABSOLUTE
+    ../fplib/microlib/fpmul.c                0x00000000   Number         0  fmul.o ABSOLUTE
+    ..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v1\ev_hc32f460_lqfp100_v1.c 0x00000000   Number         0  ev_hc32f460_lqfp100_v1.o ABSOLUTE
+    ..\..\..\..\..\driver\src\hc32f460_clk.c 0x00000000   Number         0  hc32f460_clk.o ABSOLUTE
+    ..\..\..\..\..\driver\src\hc32f460_efm.c 0x00000000   Number         0  hc32f460_efm.o ABSOLUTE
+    ..\..\..\..\..\driver\src\hc32f460_exint_nmi_swi.c 0x00000000   Number         0  hc32f460_exint_nmi_swi.o ABSOLUTE
+    ..\..\..\..\..\driver\src\hc32f460_gpio.c 0x00000000   Number         0  hc32f460_gpio.o ABSOLUTE
+    ..\..\..\..\..\driver\src\hc32f460_i2c.c 0x00000000   Number         0  hc32f460_i2c.o ABSOLUTE
+    ..\..\..\..\..\driver\src\hc32f460_icg.c 0x00000000   Number         0  hc32f460_icg.o ABSOLUTE
+    ..\..\..\..\..\driver\src\hc32f460_interrupts.c 0x00000000   Number         0  hc32f460_interrupts.o ABSOLUTE
+    ..\..\..\..\..\driver\src\hc32f460_keyscan.c 0x00000000   Number         0  hc32f460_keyscan.o ABSOLUTE
+    ..\..\..\..\..\driver\src\hc32f460_pwc.c 0x00000000   Number         0  hc32f460_pwc.o ABSOLUTE
+    ..\..\..\..\..\driver\src\hc32f460_sram.c 0x00000000   Number         0  hc32f460_sram.o ABSOLUTE
+    ..\..\..\..\..\driver\src\hc32f460_utility.c 0x00000000   Number         0  hc32f460_utility.o ABSOLUTE
+    ..\..\..\..\..\mcu\common\system_hc32f460.c 0x00000000   Number         0  system_hc32f460.o ABSOLUTE
+    ..\\..\\..\\..\\..\\bsp\\ev_hc32f460_lqfp100_v1\\ev_hc32f460_lqfp100_v1.c 0x00000000   Number         0  ev_hc32f460_lqfp100_v1.o ABSOLUTE
+    ..\\..\\..\\..\\..\\driver\\src\\hc32f460_clk.c 0x00000000   Number         0  hc32f460_clk.o ABSOLUTE
+    ..\\..\\..\\..\\..\\driver\\src\\hc32f460_efm.c 0x00000000   Number         0  hc32f460_efm.o ABSOLUTE
+    ..\\..\\..\\..\\..\\driver\\src\\hc32f460_exint_nmi_swi.c 0x00000000   Number         0  hc32f460_exint_nmi_swi.o ABSOLUTE
+    ..\\..\\..\\..\\..\\driver\\src\\hc32f460_gpio.c 0x00000000   Number         0  hc32f460_gpio.o ABSOLUTE
+    ..\\..\\..\\..\\..\\driver\\src\\hc32f460_i2c.c 0x00000000   Number         0  hc32f460_i2c.o ABSOLUTE
+    ..\\..\\..\\..\\..\\driver\\src\\hc32f460_icg.c 0x00000000   Number         0  hc32f460_icg.o ABSOLUTE
+    ..\\..\\..\\..\\..\\driver\\src\\hc32f460_interrupts.c 0x00000000   Number         0  hc32f460_interrupts.o ABSOLUTE
+    ..\\..\\..\\..\\..\\driver\\src\\hc32f460_keyscan.c 0x00000000   Number         0  hc32f460_keyscan.o ABSOLUTE
+    ..\\..\\..\\..\\..\\driver\\src\\hc32f460_pwc.c 0x00000000   Number         0  hc32f460_pwc.o ABSOLUTE
+    ..\\..\\..\\..\\..\\driver\\src\\hc32f460_sram.c 0x00000000   Number         0  hc32f460_sram.o ABSOLUTE
+    ..\\..\\..\\..\\..\\driver\\src\\hc32f460_utility.c 0x00000000   Number         0  hc32f460_utility.o ABSOLUTE
+    ..\\..\\..\\..\\..\\mcu\\common\\system_hc32f460.c 0x00000000   Number         0  system_hc32f460.o ABSOLUTE
+    ..\\source\\main.c                       0x00000000   Number         0  main.o ABSOLUTE
+    ..\source\main.c                         0x00000000   Number         0  main.o ABSOLUTE
+    cfcmple.s                                0x00000000   Number         0  cfcmple.o ABSOLUTE
+    cfrcmple.s                               0x00000000   Number         0  cfrcmple.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    startup_hc32f460.s                       0x00000000   Number         0  startup_hc32f460.o ABSOLUTE
+    .ARM.Collect$$$$00000000                 0x00000280   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x00000280   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x00000284   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x00000288   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x00000288   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x00000288   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x00000290   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x00000290   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x00000290   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x00000290   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x00000294   Section       88  startup_hc32f460.o(.text)
+    .text                                    0x000002ec   Section        0  memseta.o(.text)
+    .text                                    0x00000310   Section        0  fadd.o(.text)
+    .text                                    0x000003c0   Section        0  ffltui.o(.text)
+    .text                                    0x000003ca   Section        0  ffixui.o(.text)
+    .text                                    0x000003f2   Section        0  iusefp.o(.text)
+    i.BusFault_Handler                       0x000003f2   Section        0  hc32f460_interrupts.o(i.BusFault_Handler)
+    i.Ddl_AssertHandler                      0x000003fa   Section        0  hc32f460_utility.o(i.Ddl_AssertHandler)
+    i.__scatterload_null                     0x000003fe   Section        2  handlers.o(i.__scatterload_null)
+    .ARM.__AT_0x00000400                     0x00000400   Section       32  hc32f460_icg.o(.ARM.__AT_0x00000400)
+    .text                                    0x00000420   Section        0  fmul.o(.text)
+    .text                                    0x00000484   Section        0  fdiv.o(.text)
+    .text                                    0x00000500   Section       20  cfcmple.o(.text)
+    .text                                    0x00000514   Section       20  cfrcmple.o(.text)
+    .text                                    0x00000528   Section        0  fepilogue.o(.text)
+    .text                                    0x00000598   Section       36  init.o(.text)
+    i.BSP_CLK_Init                           0x000005bc   Section        0  ev_hc32f460_lqfp100_v1.o(i.BSP_CLK_Init)
+    i.BSP_KEY_COL_Init                       0x00000690   Section        0  ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_COL_Init)
+    BSP_KEY_COL_Init                         0x00000691   Thumb Code   128  ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_COL_Init)
+    i.BSP_KEY_GetStatus                      0x00000714   Section        0  ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_GetStatus)
+    i.BSP_KEY_Init                           0x00000734   Section        0  ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_Init)
+    i.BSP_KEY_KEY2_IrqHandler                0x00000760   Section        0  ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY2_IrqHandler)
+    i.BSP_KEY_KEY3_IrqHandler                0x00000788   Section        0  ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY3_IrqHandler)
+    i.BSP_KEY_KEY4_IrqHandler                0x000007b0   Section        0  ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY4_IrqHandler)
+    i.BSP_KEY_KEY5_IrqHandler                0x000007d8   Section        0  ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY5_IrqHandler)
+    i.BSP_KEY_ROW0_IrqCallback               0x00000800   Section        0  ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW0_IrqCallback)
+    BSP_KEY_ROW0_IrqCallback                 0x00000801   Thumb Code    64  ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW0_IrqCallback)
+    i.BSP_KEY_ROW1_IrqCallback               0x00000848   Section        0  ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW1_IrqCallback)
+    BSP_KEY_ROW1_IrqCallback                 0x00000849   Thumb Code    64  ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW1_IrqCallback)
+    i.BSP_KEY_ROW2_IrqCallback               0x00000890   Section        0  ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW2_IrqCallback)
+    BSP_KEY_ROW2_IrqCallback                 0x00000891   Thumb Code    72  ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW2_IrqCallback)
+    i.BSP_KEY_ROW_Init                       0x000008e0   Section        0  ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW_Init)
+    BSP_KEY_ROW_Init                         0x000008e1   Thumb Code   274  ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_ROW_Init)
+    i.BSP_LED_Init                           0x00000a04   Section        0  ev_hc32f460_lqfp100_v1.o(i.BSP_LED_Init)
+    i.BSP_LED_Toggle                         0x00000a3c   Section        0  ev_hc32f460_lqfp100_v1.o(i.BSP_LED_Toggle)
+    i.CLK_GetFlagStatus                      0x00000a70   Section        0  hc32f460_clk.o(i.CLK_GetFlagStatus)
+    i.CLK_LrcCmd                             0x00000b38   Section        0  hc32f460_clk.o(i.CLK_LrcCmd)
+    i.CLK_MpllCmd                            0x00000bfc   Section        0  hc32f460_clk.o(i.CLK_MpllCmd)
+    i.CLK_MpllConfig                         0x00000cd4   Section        0  hc32f460_clk.o(i.CLK_MpllConfig)
+    i.CLK_SetPllSource                       0x00000e94   Section        0  hc32f460_clk.o(i.CLK_SetPllSource)
+    i.CLK_SetSysClkSource                    0x00000f18   Section        0  hc32f460_clk.o(i.CLK_SetSysClkSource)
+    i.CLK_SysClkConfig                       0x00001048   Section        0  hc32f460_clk.o(i.CLK_SysClkConfig)
+    i.CLK_XtalCmd                            0x000011f8   Section        0  hc32f460_clk.o(i.CLK_XtalCmd)
+    i.CLK_XtalConfig                         0x00001318   Section        0  hc32f460_clk.o(i.CLK_XtalConfig)
+    i.Ddl_Delay1ms                           0x0000137c   Section        0  hc32f460_utility.o(i.Ddl_Delay1ms)
+    i.DebugMon_Handler                       0x000013a8   Section        0  hc32f460_interrupts.o(i.DebugMon_Handler)
+    i.EFM_Lock                               0x000013b0   Section        0  hc32f460_efm.o(i.EFM_Lock)
+    i.EFM_SetLatency                         0x000013c8   Section        0  hc32f460_efm.o(i.EFM_SetLatency)
+    i.EFM_Unlock                             0x00001458   Section        0  hc32f460_efm.o(i.EFM_Unlock)
+    i.EXINT_Init                             0x0000146c   Section        0  hc32f460_exint_nmi_swi.o(i.EXINT_Init)
+    i.EXINT_IrqFlgClr                        0x00001540   Section        0  hc32f460_exint_nmi_swi.o(i.EXINT_IrqFlgClr)
+    i.EXINT_IrqFlgGet                        0x00001558   Section        0  hc32f460_exint_nmi_swi.o(i.EXINT_IrqFlgGet)
+    i.HardFault_Handler                      0x000015fc   Section        0  hc32f460_interrupts.o(i.HardFault_Handler)
+    i.I2C_AckConfig                          0x00001604   Section        0  hc32f460_i2c.o(i.I2C_AckConfig)
+    i.I2C_BaudrateConfig                     0x00001684   Section        0  hc32f460_i2c.o(i.I2C_BaudrateConfig)
+    i.I2C_BusWaitCmd                         0x000018f4   Section        0  hc32f460_i2c.o(i.I2C_BusWaitCmd)
+    i.I2C_ClearStatus                        0x00001988   Section        0  hc32f460_i2c.o(i.I2C_ClearStatus)
+    i.I2C_Cmd                                0x000019f8   Section        0  hc32f460_i2c.o(i.I2C_Cmd)
+    i.I2C_DeInit                             0x00001a78   Section        0  hc32f460_i2c.o(i.I2C_DeInit)
+    i.I2C_GenerateStart                      0x00001af0   Section        0  hc32f460_i2c.o(i.I2C_GenerateStart)
+    i.I2C_GenerateStop                       0x00001b6c   Section        0  hc32f460_i2c.o(i.I2C_GenerateStop)
+    i.I2C_GetStatus                          0x00001be8   Section        0  hc32f460_i2c.o(i.I2C_GetStatus)
+    i.I2C_Init                               0x00001cc8   Section        0  hc32f460_i2c.o(i.I2C_Init)
+    i.I2C_MasterDataReceiveAndStop           0x00001dd8   Section        0  hc32f460_i2c.o(i.I2C_MasterDataReceiveAndStop)
+    i.I2C_Master_Receive                     0x00001ee8   Section        0  main.o(i.I2C_Master_Receive)
+    I2C_Master_Receive                       0x00001ee9   Thumb Code   122  main.o(i.I2C_Master_Receive)
+    i.I2C_Master_Transmit                    0x00001f68   Section        0  main.o(i.I2C_Master_Transmit)
+    I2C_Master_Transmit                      0x00001f69   Thumb Code   100  main.o(i.I2C_Master_Transmit)
+    i.I2C_ReadData                           0x00001fd0   Section        0  hc32f460_i2c.o(i.I2C_ReadData)
+    i.I2C_SoftwareResetCmd                   0x00002034   Section        0  hc32f460_i2c.o(i.I2C_SoftwareResetCmd)
+    i.I2C_Start                              0x000020b4   Section        0  hc32f460_i2c.o(i.I2C_Start)
+    i.I2C_Stop                               0x00002144   Section        0  hc32f460_i2c.o(i.I2C_Stop)
+    i.I2C_TransAddr                          0x000021dc   Section        0  hc32f460_i2c.o(i.I2C_TransAddr)
+    i.I2C_TransData                          0x000022c4   Section        0  hc32f460_i2c.o(i.I2C_TransData)
+    i.I2C_WaitStatus                         0x00002390   Section        0  hc32f460_i2c.o(i.I2C_WaitStatus)
+    i.I2C_WriteData                          0x000023bc   Section        0  hc32f460_i2c.o(i.I2C_WriteData)
+    i.IRQ000_Handler                         0x00002424   Section        0  hc32f460_interrupts.o(i.IRQ000_Handler)
+    i.IRQ001_Handler                         0x00002438   Section        0  hc32f460_interrupts.o(i.IRQ001_Handler)
+    i.IRQ002_Handler                         0x0000244c   Section        0  hc32f460_interrupts.o(i.IRQ002_Handler)
+    i.IRQ003_Handler                         0x00002460   Section        0  hc32f460_interrupts.o(i.IRQ003_Handler)
+    i.IRQ004_Handler                         0x00002474   Section        0  hc32f460_interrupts.o(i.IRQ004_Handler)
+    i.IRQ005_Handler                         0x00002488   Section        0  hc32f460_interrupts.o(i.IRQ005_Handler)
+    i.IRQ006_Handler                         0x0000249c   Section        0  hc32f460_interrupts.o(i.IRQ006_Handler)
+    i.IRQ007_Handler                         0x000024b0   Section        0  hc32f460_interrupts.o(i.IRQ007_Handler)
+    i.IRQ008_Handler                         0x000024c4   Section        0  hc32f460_interrupts.o(i.IRQ008_Handler)
+    i.IRQ009_Handler                         0x000024d8   Section        0  hc32f460_interrupts.o(i.IRQ009_Handler)
+    i.IRQ010_Handler                         0x000024ec   Section        0  hc32f460_interrupts.o(i.IRQ010_Handler)
+    i.IRQ011_Handler                         0x00002500   Section        0  hc32f460_interrupts.o(i.IRQ011_Handler)
+    i.IRQ012_Handler                         0x00002514   Section        0  hc32f460_interrupts.o(i.IRQ012_Handler)
+    i.IRQ013_Handler                         0x00002528   Section        0  hc32f460_interrupts.o(i.IRQ013_Handler)
+    i.IRQ014_Handler                         0x0000253c   Section        0  hc32f460_interrupts.o(i.IRQ014_Handler)
+    i.IRQ015_Handler                         0x00002550   Section        0  hc32f460_interrupts.o(i.IRQ015_Handler)
+    i.IRQ016_Handler                         0x00002564   Section        0  hc32f460_interrupts.o(i.IRQ016_Handler)
+    i.IRQ017_Handler                         0x00002578   Section        0  hc32f460_interrupts.o(i.IRQ017_Handler)
+    i.IRQ018_Handler                         0x0000258c   Section        0  hc32f460_interrupts.o(i.IRQ018_Handler)
+    i.IRQ019_Handler                         0x000025a0   Section        0  hc32f460_interrupts.o(i.IRQ019_Handler)
+    i.IRQ020_Handler                         0x000025b4   Section        0  hc32f460_interrupts.o(i.IRQ020_Handler)
+    i.IRQ021_Handler                         0x000025c8   Section        0  hc32f460_interrupts.o(i.IRQ021_Handler)
+    i.IRQ022_Handler                         0x000025dc   Section        0  hc32f460_interrupts.o(i.IRQ022_Handler)
+    i.IRQ023_Handler                         0x000025f0   Section        0  hc32f460_interrupts.o(i.IRQ023_Handler)
+    i.IRQ024_Handler                         0x00002604   Section        0  hc32f460_interrupts.o(i.IRQ024_Handler)
+    i.IRQ025_Handler                         0x00002618   Section        0  hc32f460_interrupts.o(i.IRQ025_Handler)
+    i.IRQ026_Handler                         0x0000262c   Section        0  hc32f460_interrupts.o(i.IRQ026_Handler)
+    i.IRQ027_Handler                         0x00002640   Section        0  hc32f460_interrupts.o(i.IRQ027_Handler)
+    i.IRQ028_Handler                         0x00002654   Section        0  hc32f460_interrupts.o(i.IRQ028_Handler)
+    i.IRQ029_Handler                         0x00002668   Section        0  hc32f460_interrupts.o(i.IRQ029_Handler)
+    i.IRQ030_Handler                         0x0000267c   Section        0  hc32f460_interrupts.o(i.IRQ030_Handler)
+    i.IRQ031_Handler                         0x00002690   Section        0  hc32f460_interrupts.o(i.IRQ031_Handler)
+    i.IRQ032_Handler                         0x000026a4   Section        0  hc32f460_interrupts.o(i.IRQ032_Handler)
+    i.IRQ033_Handler                         0x000026bc   Section        0  hc32f460_interrupts.o(i.IRQ033_Handler)
+    i.IRQ034_Handler                         0x000026d4   Section        0  hc32f460_interrupts.o(i.IRQ034_Handler)
+    i.IRQ035_Handler                         0x000026ec   Section        0  hc32f460_interrupts.o(i.IRQ035_Handler)
+    i.IRQ036_Handler                         0x00002704   Section        0  hc32f460_interrupts.o(i.IRQ036_Handler)
+    i.IRQ037_Handler                         0x0000271c   Section        0  hc32f460_interrupts.o(i.IRQ037_Handler)
+    i.IRQ038_Handler                         0x00002734   Section        0  hc32f460_interrupts.o(i.IRQ038_Handler)
+    i.IRQ039_Handler                         0x0000274c   Section        0  hc32f460_interrupts.o(i.IRQ039_Handler)
+    i.IRQ040_Handler                         0x00002764   Section        0  hc32f460_interrupts.o(i.IRQ040_Handler)
+    i.IRQ041_Handler                         0x0000277c   Section        0  hc32f460_interrupts.o(i.IRQ041_Handler)
+    i.IRQ042_Handler                         0x00002794   Section        0  hc32f460_interrupts.o(i.IRQ042_Handler)
+    i.IRQ043_Handler                         0x000027ac   Section        0  hc32f460_interrupts.o(i.IRQ043_Handler)
+    i.IRQ044_Handler                         0x000027c4   Section        0  hc32f460_interrupts.o(i.IRQ044_Handler)
+    i.IRQ045_Handler                         0x000027dc   Section        0  hc32f460_interrupts.o(i.IRQ045_Handler)
+    i.IRQ046_Handler                         0x000027f4   Section        0  hc32f460_interrupts.o(i.IRQ046_Handler)
+    i.IRQ047_Handler                         0x0000280c   Section        0  hc32f460_interrupts.o(i.IRQ047_Handler)
+    i.IRQ048_Handler                         0x00002824   Section        0  hc32f460_interrupts.o(i.IRQ048_Handler)
+    i.IRQ049_Handler                         0x0000283c   Section        0  hc32f460_interrupts.o(i.IRQ049_Handler)
+    i.IRQ050_Handler                         0x00002854   Section        0  hc32f460_interrupts.o(i.IRQ050_Handler)
+    i.IRQ051_Handler                         0x0000286c   Section        0  hc32f460_interrupts.o(i.IRQ051_Handler)
+    i.IRQ052_Handler                         0x00002884   Section        0  hc32f460_interrupts.o(i.IRQ052_Handler)
+    i.IRQ053_Handler                         0x0000289c   Section        0  hc32f460_interrupts.o(i.IRQ053_Handler)
+    i.IRQ054_Handler                         0x000028b4   Section        0  hc32f460_interrupts.o(i.IRQ054_Handler)
+    i.IRQ055_Handler                         0x000028cc   Section        0  hc32f460_interrupts.o(i.IRQ055_Handler)
+    i.IRQ056_Handler                         0x000028e4   Section        0  hc32f460_interrupts.o(i.IRQ056_Handler)
+    i.IRQ057_Handler                         0x000028fc   Section        0  hc32f460_interrupts.o(i.IRQ057_Handler)
+    i.IRQ058_Handler                         0x00002914   Section        0  hc32f460_interrupts.o(i.IRQ058_Handler)
+    i.IRQ059_Handler                         0x0000292c   Section        0  hc32f460_interrupts.o(i.IRQ059_Handler)
+    i.IRQ060_Handler                         0x00002944   Section        0  hc32f460_interrupts.o(i.IRQ060_Handler)
+    i.IRQ061_Handler                         0x0000295c   Section        0  hc32f460_interrupts.o(i.IRQ061_Handler)
+    i.IRQ062_Handler                         0x00002974   Section        0  hc32f460_interrupts.o(i.IRQ062_Handler)
+    i.IRQ063_Handler                         0x0000298c   Section        0  hc32f460_interrupts.o(i.IRQ063_Handler)
+    i.IRQ064_Handler                         0x000029a4   Section        0  hc32f460_interrupts.o(i.IRQ064_Handler)
+    i.IRQ065_Handler                         0x000029bc   Section        0  hc32f460_interrupts.o(i.IRQ065_Handler)
+    i.IRQ066_Handler                         0x000029d4   Section        0  hc32f460_interrupts.o(i.IRQ066_Handler)
+    i.IRQ067_Handler                         0x000029ec   Section        0  hc32f460_interrupts.o(i.IRQ067_Handler)
+    i.IRQ068_Handler                         0x00002a04   Section        0  hc32f460_interrupts.o(i.IRQ068_Handler)
+    i.IRQ069_Handler                         0x00002a1c   Section        0  hc32f460_interrupts.o(i.IRQ069_Handler)
+    i.IRQ070_Handler                         0x00002a34   Section        0  hc32f460_interrupts.o(i.IRQ070_Handler)
+    i.IRQ071_Handler                         0x00002a4c   Section        0  hc32f460_interrupts.o(i.IRQ071_Handler)
+    i.IRQ072_Handler                         0x00002a64   Section        0  hc32f460_interrupts.o(i.IRQ072_Handler)
+    i.IRQ073_Handler                         0x00002a7c   Section        0  hc32f460_interrupts.o(i.IRQ073_Handler)
+    i.IRQ074_Handler                         0x00002a94   Section        0  hc32f460_interrupts.o(i.IRQ074_Handler)
+    i.IRQ075_Handler                         0x00002aac   Section        0  hc32f460_interrupts.o(i.IRQ075_Handler)
+    i.IRQ076_Handler                         0x00002ac4   Section        0  hc32f460_interrupts.o(i.IRQ076_Handler)
+    i.IRQ077_Handler                         0x00002adc   Section        0  hc32f460_interrupts.o(i.IRQ077_Handler)
+    i.IRQ078_Handler                         0x00002af4   Section        0  hc32f460_interrupts.o(i.IRQ078_Handler)
+    i.IRQ079_Handler                         0x00002b0c   Section        0  hc32f460_interrupts.o(i.IRQ079_Handler)
+    i.IRQ080_Handler                         0x00002b24   Section        0  hc32f460_interrupts.o(i.IRQ080_Handler)
+    i.IRQ081_Handler                         0x00002b3c   Section        0  hc32f460_interrupts.o(i.IRQ081_Handler)
+    i.IRQ082_Handler                         0x00002b54   Section        0  hc32f460_interrupts.o(i.IRQ082_Handler)
+    i.IRQ083_Handler                         0x00002b6c   Section        0  hc32f460_interrupts.o(i.IRQ083_Handler)
+    i.IRQ084_Handler                         0x00002b84   Section        0  hc32f460_interrupts.o(i.IRQ084_Handler)
+    i.IRQ085_Handler                         0x00002b9c   Section        0  hc32f460_interrupts.o(i.IRQ085_Handler)
+    i.IRQ086_Handler                         0x00002bb4   Section        0  hc32f460_interrupts.o(i.IRQ086_Handler)
+    i.IRQ087_Handler                         0x00002bcc   Section        0  hc32f460_interrupts.o(i.IRQ087_Handler)
+    i.IRQ088_Handler                         0x00002be4   Section        0  hc32f460_interrupts.o(i.IRQ088_Handler)
+    i.IRQ089_Handler                         0x00002bfc   Section        0  hc32f460_interrupts.o(i.IRQ089_Handler)
+    i.IRQ090_Handler                         0x00002c14   Section        0  hc32f460_interrupts.o(i.IRQ090_Handler)
+    i.IRQ091_Handler                         0x00002c2c   Section        0  hc32f460_interrupts.o(i.IRQ091_Handler)
+    i.IRQ092_Handler                         0x00002c44   Section        0  hc32f460_interrupts.o(i.IRQ092_Handler)
+    i.IRQ093_Handler                         0x00002c5c   Section        0  hc32f460_interrupts.o(i.IRQ093_Handler)
+    i.IRQ094_Handler                         0x00002c74   Section        0  hc32f460_interrupts.o(i.IRQ094_Handler)
+    i.IRQ095_Handler                         0x00002c8c   Section        0  hc32f460_interrupts.o(i.IRQ095_Handler)
+    i.IRQ096_Handler                         0x00002ca4   Section        0  hc32f460_interrupts.o(i.IRQ096_Handler)
+    i.IRQ097_Handler                         0x00002cbc   Section        0  hc32f460_interrupts.o(i.IRQ097_Handler)
+    i.IRQ098_Handler                         0x00002cd4   Section        0  hc32f460_interrupts.o(i.IRQ098_Handler)
+    i.IRQ099_Handler                         0x00002cec   Section        0  hc32f460_interrupts.o(i.IRQ099_Handler)
+    i.IRQ100_Handler                         0x00002d04   Section        0  hc32f460_interrupts.o(i.IRQ100_Handler)
+    i.IRQ101_Handler                         0x00002d1c   Section        0  hc32f460_interrupts.o(i.IRQ101_Handler)
+    i.IRQ102_Handler                         0x00002d34   Section        0  hc32f460_interrupts.o(i.IRQ102_Handler)
+    i.IRQ103_Handler                         0x00002d4c   Section        0  hc32f460_interrupts.o(i.IRQ103_Handler)
+    i.IRQ104_Handler                         0x00002d64   Section        0  hc32f460_interrupts.o(i.IRQ104_Handler)
+    i.IRQ105_Handler                         0x00002d7c   Section        0  hc32f460_interrupts.o(i.IRQ105_Handler)
+    i.IRQ106_Handler                         0x00002d94   Section        0  hc32f460_interrupts.o(i.IRQ106_Handler)
+    i.IRQ107_Handler                         0x00002dac   Section        0  hc32f460_interrupts.o(i.IRQ107_Handler)
+    i.IRQ108_Handler                         0x00002dc4   Section        0  hc32f460_interrupts.o(i.IRQ108_Handler)
+    i.IRQ109_Handler                         0x00002ddc   Section        0  hc32f460_interrupts.o(i.IRQ109_Handler)
+    i.IRQ110_Handler                         0x00002df4   Section        0  hc32f460_interrupts.o(i.IRQ110_Handler)
+    i.IRQ111_Handler                         0x00002e0c   Section        0  hc32f460_interrupts.o(i.IRQ111_Handler)
+    i.IRQ112_Handler                         0x00002e24   Section        0  hc32f460_interrupts.o(i.IRQ112_Handler)
+    i.IRQ113_Handler                         0x00002e3c   Section        0  hc32f460_interrupts.o(i.IRQ113_Handler)
+    i.IRQ114_Handler                         0x00002e54   Section        0  hc32f460_interrupts.o(i.IRQ114_Handler)
+    i.IRQ115_Handler                         0x00002e6c   Section        0  hc32f460_interrupts.o(i.IRQ115_Handler)
+    i.IRQ116_Handler                         0x00002e84   Section        0  hc32f460_interrupts.o(i.IRQ116_Handler)
+    i.IRQ117_Handler                         0x00002e9c   Section        0  hc32f460_interrupts.o(i.IRQ117_Handler)
+    i.IRQ118_Handler                         0x00002eb4   Section        0  hc32f460_interrupts.o(i.IRQ118_Handler)
+    i.IRQ119_Handler                         0x00002ecc   Section        0  hc32f460_interrupts.o(i.IRQ119_Handler)
+    i.IRQ120_Handler                         0x00002ee4   Section        0  hc32f460_interrupts.o(i.IRQ120_Handler)
+    i.IRQ121_Handler                         0x00002efc   Section        0  hc32f460_interrupts.o(i.IRQ121_Handler)
+    i.IRQ122_Handler                         0x00002f14   Section        0  hc32f460_interrupts.o(i.IRQ122_Handler)
+    i.IRQ123_Handler                         0x00002f2c   Section        0  hc32f460_interrupts.o(i.IRQ123_Handler)
+    i.IRQ124_Handler                         0x00002f44   Section        0  hc32f460_interrupts.o(i.IRQ124_Handler)
+    i.IRQ125_Handler                         0x00002f5c   Section        0  hc32f460_interrupts.o(i.IRQ125_Handler)
+    i.IRQ126_Handler                         0x00002f74   Section        0  hc32f460_interrupts.o(i.IRQ126_Handler)
+    i.IRQ127_Handler                         0x00002f8c   Section        0  hc32f460_interrupts.o(i.IRQ127_Handler)
+    i.KEYSCAN_GetColIdx                      0x00002fa4   Section        0  hc32f460_keyscan.o(i.KEYSCAN_GetColIdx)
+    i.KEYSCAN_Init                           0x00002fb4   Section        0  hc32f460_keyscan.o(i.KEYSCAN_Init)
+    i.KEYSCAN_Start                          0x00003180   Section        0  hc32f460_keyscan.o(i.KEYSCAN_Start)
+    i.Master_Initialize                      0x00003198   Section        0  main.o(i.Master_Initialize)
+    Master_Initialize                        0x00003199   Thumb Code    58  main.o(i.Master_Initialize)
+    i.MemManage_Handler                      0x000031dc   Section        0  hc32f460_interrupts.o(i.MemManage_Handler)
+    i.NMI_Handler                            0x000031e4   Section        0  hc32f460_interrupts.o(i.NMI_Handler)
+    i.NMI_IrqHandler                         0x000031ec   Section        0  hc32f460_exint_nmi_swi.o(i.NMI_IrqHandler)
+    i.PORT_GetBit                            0x00003244   Section        0  hc32f460_gpio.o(i.PORT_GetBit)
+    i.PORT_Init                              0x00003318   Section        0  hc32f460_gpio.o(i.PORT_Init)
+    i.PORT_Lock                              0x00003510   Section        0  hc32f460_gpio.o(i.PORT_Lock)
+    i.PORT_SetFunc                           0x00003520   Section        0  hc32f460_gpio.o(i.PORT_SetFunc)
+    i.PORT_Toggle                            0x0000361c   Section        0  hc32f460_gpio.o(i.PORT_Toggle)
+    i.PORT_Unlock                            0x0000368c   Section        0  hc32f460_gpio.o(i.PORT_Unlock)
+    i.PWC_Fcg0PeriphClockCmd                 0x0000369c   Section        0  hc32f460_pwc.o(i.PWC_Fcg0PeriphClockCmd)
+    i.PWC_Fcg1PeriphClockCmd                 0x00003730   Section        0  hc32f460_pwc.o(i.PWC_Fcg1PeriphClockCmd)
+    i.PWC_HS2HP                              0x000037b4   Section        0  hc32f460_pwc.o(i.PWC_HS2HP)
+    i.PendSV_Handler                         0x000037fc   Section        0  hc32f460_interrupts.o(i.PendSV_Handler)
+    i.SRAM_CK_Disable                        0x00003804   Section        0  hc32f460_sram.o(i.SRAM_CK_Disable)
+    i.SRAM_CK_Enable                         0x00003814   Section        0  hc32f460_sram.o(i.SRAM_CK_Enable)
+    i.SRAM_Init                              0x00003824   Section        0  hc32f460_sram.o(i.SRAM_Init)
+    i.SRAM_WT_Disable                        0x000039b4   Section        0  hc32f460_sram.o(i.SRAM_WT_Disable)
+    i.SRAM_WT_Enable                         0x000039c4   Section        0  hc32f460_sram.o(i.SRAM_WT_Enable)
+    i.SVC_Handler                            0x000039d4   Section        0  hc32f460_interrupts.o(i.SVC_Handler)
+    i.SysTick_Handler                        0x000039dc   Section        0  hc32f460_interrupts.o(i.SysTick_Handler)
+    i.SystemCoreClockUpdate                  0x000039e4   Section        0  system_hc32f460.o(i.SystemCoreClockUpdate)
+    i.SystemInit                             0x00003ad0   Section        0  system_hc32f460.o(i.SystemInit)
+    i.UsageFault_Handler                     0x00003ad8   Section        0  hc32f460_interrupts.o(i.UsageFault_Handler)
+    i.__scatterload_copy                     0x00003ae0   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_zeroinit                 0x00003aee   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.enIrqRegistration                      0x00003afc   Section        0  hc32f460_interrupts.o(i.enIrqRegistration)
+    i.main                                   0x00003bc8   Section        0  main.o(i.main)
+    .constdata                               0x00003c88   Section      140  ev_hc32f460_lqfp100_v1.o(.constdata)
+    BSP_LED_PORT_PIN                         0x00003c88   Data          16  ev_hc32f460_lqfp100_v1.o(.constdata)
+    BSP_KEYOUT_PORT_PIN                      0x00003c98   Data          12  ev_hc32f460_lqfp100_v1.o(.constdata)
+    BSP_KEYIN_PORT_PIN                       0x00003ca4   Data         112  ev_hc32f460_lqfp100_v1.o(.constdata)
+    .data                                    0x1fff8000   Section        8  system_hc32f460.o(.data)
+    .data                                    0x1fff8008   Section        4  hc32f460_exint_nmi_swi.o(.data)
+    pfnNmiCallback                           0x1fff8008   Data           4  hc32f460_exint_nmi_swi.o(.data)
+    .data                                    0x1fff800c   Section        4  ev_hc32f460_lqfp100_v1.o(.data)
+    gu32GlobalKey                            0x1fff800c   Data           4  ev_hc32f460_lqfp100_v1.o(.data)
+    .bss                                     0x1fff8010   Section      512  hc32f460_interrupts.o(.bss)
+    STACK                                    0x1fff8210   Section     1024  startup_hc32f460.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$ROPI$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __Vectors                                0x00000000   Data           4  startup_hc32f460.o(RESET)
+    BusFault_IrqHandler                       - Undefined Weak Reference
+    DebugMon_IrqHandler                       - Undefined Weak Reference
+    HardFault_IrqHandler                      - Undefined Weak Reference
+    MemManage_IrqHandler                      - Undefined Weak Reference
+    PendSV_IrqHandler                         - Undefined Weak Reference
+    SVC_IrqHandler                            - Undefined Weak Reference
+    SysTick_IrqHandler                        - Undefined Weak Reference
+    UsageFault_IrqHandler                     - Undefined Weak Reference
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __Vectors_End                            0x00000280   Data           0  startup_hc32f460.o(RESET)
+    __Vectors_Size                           0x00000280   Number         0  startup_hc32f460.o ABSOLUTE
+    __main                                   0x00000281   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x00000281   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x00000285   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x00000289   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x00000289   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x00000289   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x00000289   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x00000291   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x00000291   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Reset_Handler                            0x00000295   Thumb Code    48  startup_hc32f460.o(.text)
+    IRQ128_Handler                           0x000002d7   Thumb Code     0  startup_hc32f460.o(.text)
+    IRQ129_Handler                           0x000002d7   Thumb Code     0  startup_hc32f460.o(.text)
+    IRQ130_Handler                           0x000002d7   Thumb Code     0  startup_hc32f460.o(.text)
+    IRQ131_Handler                           0x000002d7   Thumb Code     0  startup_hc32f460.o(.text)
+    IRQ132_Handler                           0x000002d7   Thumb Code     0  startup_hc32f460.o(.text)
+    IRQ133_Handler                           0x000002d7   Thumb Code     0  startup_hc32f460.o(.text)
+    IRQ134_Handler                           0x000002d7   Thumb Code     0  startup_hc32f460.o(.text)
+    IRQ135_Handler                           0x000002d7   Thumb Code     0  startup_hc32f460.o(.text)
+    IRQ136_Handler                           0x000002d7   Thumb Code     0  startup_hc32f460.o(.text)
+    IRQ137_Handler                           0x000002d7   Thumb Code     0  startup_hc32f460.o(.text)
+    IRQ138_Handler                           0x000002d7   Thumb Code     0  startup_hc32f460.o(.text)
+    IRQ139_Handler                           0x000002d7   Thumb Code     0  startup_hc32f460.o(.text)
+    IRQ140_Handler                           0x000002d7   Thumb Code     0  startup_hc32f460.o(.text)
+    IRQ141_Handler                           0x000002d7   Thumb Code     0  startup_hc32f460.o(.text)
+    IRQ142_Handler                           0x000002d7   Thumb Code     0  startup_hc32f460.o(.text)
+    IRQ143_Handler                           0x000002d7   Thumb Code     0  startup_hc32f460.o(.text)
+    __aeabi_memset                           0x000002ed   Thumb Code    14  memseta.o(.text)
+    __aeabi_memset4                          0x000002ed   Thumb Code     0  memseta.o(.text)
+    __aeabi_memset8                          0x000002ed   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr                           0x000002fb   Thumb Code     4  memseta.o(.text)
+    __aeabi_memclr4                          0x000002fb   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr8                          0x000002fb   Thumb Code     0  memseta.o(.text)
+    _memset$wrapper                          0x000002ff   Thumb Code    18  memseta.o(.text)
+    __aeabi_fadd                             0x00000311   Thumb Code   164  fadd.o(.text)
+    __aeabi_fsub                             0x000003b5   Thumb Code     6  fadd.o(.text)
+    __aeabi_frsub                            0x000003bb   Thumb Code     6  fadd.o(.text)
+    __aeabi_ui2f                             0x000003c1   Thumb Code    10  ffltui.o(.text)
+    __aeabi_f2uiz                            0x000003cb   Thumb Code    40  ffixui.o(.text)
+    BusFault_Handler                         0x000003f3   Thumb Code     8  hc32f460_interrupts.o(i.BusFault_Handler)
+    __I$use$fp                               0x000003f3   Thumb Code     0  iusefp.o(.text)
+    Ddl_AssertHandler                        0x000003fb   Thumb Code     4  hc32f460_utility.o(i.Ddl_AssertHandler)
+    __scatterload_null                       0x000003ff   Thumb Code     2  handlers.o(i.__scatterload_null)
+    u32ICG                                   0x00000400   Data          32  hc32f460_icg.o(.ARM.__AT_0x00000400)
+    __aeabi_fmul                             0x00000421   Thumb Code   100  fmul.o(.text)
+    __aeabi_fdiv                             0x00000485   Thumb Code   124  fdiv.o(.text)
+    __aeabi_cfcmpeq                          0x00000501   Thumb Code     0  cfcmple.o(.text)
+    __aeabi_cfcmple                          0x00000501   Thumb Code    20  cfcmple.o(.text)
+    __aeabi_cfrcmple                         0x00000515   Thumb Code    20  cfrcmple.o(.text)
+    _float_round                             0x00000529   Thumb Code    18  fepilogue.o(.text)
+    _float_epilogue                          0x0000053b   Thumb Code    92  fepilogue.o(.text)
+    __scatterload                            0x00000599   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x00000599   Thumb Code     0  init.o(.text)
+    BSP_CLK_Init                             0x000005bd   Thumb Code   212  ev_hc32f460_lqfp100_v1.o(i.BSP_CLK_Init)
+    BSP_KEY_GetStatus                        0x00000715   Thumb Code    26  ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_GetStatus)
+    BSP_KEY_Init                             0x00000735   Thumb Code    40  ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_Init)
+    BSP_KEY_KEY2_IrqHandler                  0x00000761   Thumb Code    36  ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY2_IrqHandler)
+    BSP_KEY_KEY3_IrqHandler                  0x00000789   Thumb Code    36  ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY3_IrqHandler)
+    BSP_KEY_KEY4_IrqHandler                  0x000007b1   Thumb Code    36  ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY4_IrqHandler)
+    BSP_KEY_KEY5_IrqHandler                  0x000007d9   Thumb Code    36  ev_hc32f460_lqfp100_v1.o(i.BSP_KEY_KEY5_IrqHandler)
+    BSP_LED_Init                             0x00000a05   Thumb Code    52  ev_hc32f460_lqfp100_v1.o(i.BSP_LED_Init)
+    BSP_LED_Toggle                           0x00000a3d   Thumb Code    46  ev_hc32f460_lqfp100_v1.o(i.BSP_LED_Toggle)
+    CLK_GetFlagStatus                        0x00000a71   Thumb Code   152  hc32f460_clk.o(i.CLK_GetFlagStatus)
+    CLK_LrcCmd                               0x00000b39   Thumb Code   142  hc32f460_clk.o(i.CLK_LrcCmd)
+    CLK_MpllCmd                              0x00000bfd   Thumb Code   162  hc32f460_clk.o(i.CLK_MpllCmd)
+    CLK_MpllConfig                           0x00000cd5   Thumb Code   372  hc32f460_clk.o(i.CLK_MpllConfig)
+    CLK_SetPllSource                         0x00000e95   Thumb Code    80  hc32f460_clk.o(i.CLK_SetPllSource)
+    CLK_SetSysClkSource                      0x00000f19   Thumb Code   240  hc32f460_clk.o(i.CLK_SetSysClkSource)
+    CLK_SysClkConfig                         0x00001049   Thumb Code   366  hc32f460_clk.o(i.CLK_SysClkConfig)
+    CLK_XtalCmd                              0x000011f9   Thumb Code   230  hc32f460_clk.o(i.CLK_XtalCmd)
+    CLK_XtalConfig                           0x00001319   Thumb Code    92  hc32f460_clk.o(i.CLK_XtalConfig)
+    Ddl_Delay1ms                             0x0000137d   Thumb Code    40  hc32f460_utility.o(i.Ddl_Delay1ms)
+    DebugMon_Handler                         0x000013a9   Thumb Code     8  hc32f460_interrupts.o(i.DebugMon_Handler)
+    EFM_Lock                                 0x000013b1   Thumb Code    20  hc32f460_efm.o(i.EFM_Lock)
+    EFM_SetLatency                           0x000013c9   Thumb Code    94  hc32f460_efm.o(i.EFM_SetLatency)
+    EFM_Unlock                               0x00001459   Thumb Code    16  hc32f460_efm.o(i.EFM_Unlock)
+    EXINT_Init                               0x0000146d   Thumb Code   156  hc32f460_exint_nmi_swi.o(i.EXINT_Init)
+    EXINT_IrqFlgClr                          0x00001541   Thumb Code    20  hc32f460_exint_nmi_swi.o(i.EXINT_IrqFlgClr)
+    EXINT_IrqFlgGet                          0x00001559   Thumb Code   106  hc32f460_exint_nmi_swi.o(i.EXINT_IrqFlgGet)
+    HardFault_Handler                        0x000015fd   Thumb Code     8  hc32f460_interrupts.o(i.HardFault_Handler)
+    I2C_AckConfig                            0x00001605   Thumb Code    72  hc32f460_i2c.o(i.I2C_AckConfig)
+    I2C_BaudrateConfig                       0x00001685   Thumb Code   550  hc32f460_i2c.o(i.I2C_BaudrateConfig)
+    I2C_BusWaitCmd                           0x000018f5   Thumb Code    90  hc32f460_i2c.o(i.I2C_BusWaitCmd)
+    I2C_ClearStatus                          0x00001989   Thumb Code    52  hc32f460_i2c.o(i.I2C_ClearStatus)
+    I2C_Cmd                                  0x000019f9   Thumb Code    72  hc32f460_i2c.o(i.I2C_Cmd)
+    I2C_DeInit                               0x00001a79   Thumb Code    62  hc32f460_i2c.o(i.I2C_DeInit)
+    I2C_GenerateStart                        0x00001af1   Thumb Code    68  hc32f460_i2c.o(i.I2C_GenerateStart)
+    I2C_GenerateStop                         0x00001b6d   Thumb Code    68  hc32f460_i2c.o(i.I2C_GenerateStop)
+    I2C_GetStatus                            0x00001be9   Thumb Code   168  hc32f460_i2c.o(i.I2C_GetStatus)
+    I2C_Init                                 0x00001cc9   Thumb Code   212  hc32f460_i2c.o(i.I2C_Init)
+    I2C_MasterDataReceiveAndStop             0x00001dd9   Thumb Code   216  hc32f460_i2c.o(i.I2C_MasterDataReceiveAndStop)
+    I2C_ReadData                             0x00001fd1   Thumb Code    44  hc32f460_i2c.o(i.I2C_ReadData)
+    I2C_SoftwareResetCmd                     0x00002035   Thumb Code    72  hc32f460_i2c.o(i.I2C_SoftwareResetCmd)
+    I2C_Start                                0x000020b5   Thumb Code    84  hc32f460_i2c.o(i.I2C_Start)
+    I2C_Stop                                 0x00002145   Thumb Code    94  hc32f460_i2c.o(i.I2C_Stop)
+    I2C_TransAddr                            0x000021dd   Thumb Code   174  hc32f460_i2c.o(i.I2C_TransAddr)
+    I2C_TransData                            0x000022c5   Thumb Code   146  hc32f460_i2c.o(i.I2C_TransData)
+    I2C_WaitStatus                           0x00002391   Thumb Code    42  hc32f460_i2c.o(i.I2C_WaitStatus)
+    I2C_WriteData                            0x000023bd   Thumb Code    46  hc32f460_i2c.o(i.I2C_WriteData)
+    IRQ000_Handler                           0x00002425   Thumb Code    16  hc32f460_interrupts.o(i.IRQ000_Handler)
+    IRQ001_Handler                           0x00002439   Thumb Code    16  hc32f460_interrupts.o(i.IRQ001_Handler)
+    IRQ002_Handler                           0x0000244d   Thumb Code    16  hc32f460_interrupts.o(i.IRQ002_Handler)
+    IRQ003_Handler                           0x00002461   Thumb Code    16  hc32f460_interrupts.o(i.IRQ003_Handler)
+    IRQ004_Handler                           0x00002475   Thumb Code    16  hc32f460_interrupts.o(i.IRQ004_Handler)
+    IRQ005_Handler                           0x00002489   Thumb Code    16  hc32f460_interrupts.o(i.IRQ005_Handler)
+    IRQ006_Handler                           0x0000249d   Thumb Code    16  hc32f460_interrupts.o(i.IRQ006_Handler)
+    IRQ007_Handler                           0x000024b1   Thumb Code    16  hc32f460_interrupts.o(i.IRQ007_Handler)
+    IRQ008_Handler                           0x000024c5   Thumb Code    16  hc32f460_interrupts.o(i.IRQ008_Handler)
+    IRQ009_Handler                           0x000024d9   Thumb Code    16  hc32f460_interrupts.o(i.IRQ009_Handler)
+    IRQ010_Handler                           0x000024ed   Thumb Code    16  hc32f460_interrupts.o(i.IRQ010_Handler)
+    IRQ011_Handler                           0x00002501   Thumb Code    16  hc32f460_interrupts.o(i.IRQ011_Handler)
+    IRQ012_Handler                           0x00002515   Thumb Code    16  hc32f460_interrupts.o(i.IRQ012_Handler)
+    IRQ013_Handler                           0x00002529   Thumb Code    16  hc32f460_interrupts.o(i.IRQ013_Handler)
+    IRQ014_Handler                           0x0000253d   Thumb Code    16  hc32f460_interrupts.o(i.IRQ014_Handler)
+    IRQ015_Handler                           0x00002551   Thumb Code    16  hc32f460_interrupts.o(i.IRQ015_Handler)
+    IRQ016_Handler                           0x00002565   Thumb Code    16  hc32f460_interrupts.o(i.IRQ016_Handler)
+    IRQ017_Handler                           0x00002579   Thumb Code    16  hc32f460_interrupts.o(i.IRQ017_Handler)
+    IRQ018_Handler                           0x0000258d   Thumb Code    16  hc32f460_interrupts.o(i.IRQ018_Handler)
+    IRQ019_Handler                           0x000025a1   Thumb Code    16  hc32f460_interrupts.o(i.IRQ019_Handler)
+    IRQ020_Handler                           0x000025b5   Thumb Code    16  hc32f460_interrupts.o(i.IRQ020_Handler)
+    IRQ021_Handler                           0x000025c9   Thumb Code    16  hc32f460_interrupts.o(i.IRQ021_Handler)
+    IRQ022_Handler                           0x000025dd   Thumb Code    16  hc32f460_interrupts.o(i.IRQ022_Handler)
+    IRQ023_Handler                           0x000025f1   Thumb Code    16  hc32f460_interrupts.o(i.IRQ023_Handler)
+    IRQ024_Handler                           0x00002605   Thumb Code    16  hc32f460_interrupts.o(i.IRQ024_Handler)
+    IRQ025_Handler                           0x00002619   Thumb Code    16  hc32f460_interrupts.o(i.IRQ025_Handler)
+    IRQ026_Handler                           0x0000262d   Thumb Code    16  hc32f460_interrupts.o(i.IRQ026_Handler)
+    IRQ027_Handler                           0x00002641   Thumb Code    16  hc32f460_interrupts.o(i.IRQ027_Handler)
+    IRQ028_Handler                           0x00002655   Thumb Code    16  hc32f460_interrupts.o(i.IRQ028_Handler)
+    IRQ029_Handler                           0x00002669   Thumb Code    16  hc32f460_interrupts.o(i.IRQ029_Handler)
+    IRQ030_Handler                           0x0000267d   Thumb Code    16  hc32f460_interrupts.o(i.IRQ030_Handler)
+    IRQ031_Handler                           0x00002691   Thumb Code    16  hc32f460_interrupts.o(i.IRQ031_Handler)
+    IRQ032_Handler                           0x000026a5   Thumb Code    20  hc32f460_interrupts.o(i.IRQ032_Handler)
+    IRQ033_Handler                           0x000026bd   Thumb Code    20  hc32f460_interrupts.o(i.IRQ033_Handler)
+    IRQ034_Handler                           0x000026d5   Thumb Code    20  hc32f460_interrupts.o(i.IRQ034_Handler)
+    IRQ035_Handler                           0x000026ed   Thumb Code    20  hc32f460_interrupts.o(i.IRQ035_Handler)
+    IRQ036_Handler                           0x00002705   Thumb Code    20  hc32f460_interrupts.o(i.IRQ036_Handler)
+    IRQ037_Handler                           0x0000271d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ037_Handler)
+    IRQ038_Handler                           0x00002735   Thumb Code    20  hc32f460_interrupts.o(i.IRQ038_Handler)
+    IRQ039_Handler                           0x0000274d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ039_Handler)
+    IRQ040_Handler                           0x00002765   Thumb Code    20  hc32f460_interrupts.o(i.IRQ040_Handler)
+    IRQ041_Handler                           0x0000277d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ041_Handler)
+    IRQ042_Handler                           0x00002795   Thumb Code    20  hc32f460_interrupts.o(i.IRQ042_Handler)
+    IRQ043_Handler                           0x000027ad   Thumb Code    20  hc32f460_interrupts.o(i.IRQ043_Handler)
+    IRQ044_Handler                           0x000027c5   Thumb Code    20  hc32f460_interrupts.o(i.IRQ044_Handler)
+    IRQ045_Handler                           0x000027dd   Thumb Code    20  hc32f460_interrupts.o(i.IRQ045_Handler)
+    IRQ046_Handler                           0x000027f5   Thumb Code    20  hc32f460_interrupts.o(i.IRQ046_Handler)
+    IRQ047_Handler                           0x0000280d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ047_Handler)
+    IRQ048_Handler                           0x00002825   Thumb Code    20  hc32f460_interrupts.o(i.IRQ048_Handler)
+    IRQ049_Handler                           0x0000283d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ049_Handler)
+    IRQ050_Handler                           0x00002855   Thumb Code    20  hc32f460_interrupts.o(i.IRQ050_Handler)
+    IRQ051_Handler                           0x0000286d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ051_Handler)
+    IRQ052_Handler                           0x00002885   Thumb Code    20  hc32f460_interrupts.o(i.IRQ052_Handler)
+    IRQ053_Handler                           0x0000289d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ053_Handler)
+    IRQ054_Handler                           0x000028b5   Thumb Code    20  hc32f460_interrupts.o(i.IRQ054_Handler)
+    IRQ055_Handler                           0x000028cd   Thumb Code    20  hc32f460_interrupts.o(i.IRQ055_Handler)
+    IRQ056_Handler                           0x000028e5   Thumb Code    20  hc32f460_interrupts.o(i.IRQ056_Handler)
+    IRQ057_Handler                           0x000028fd   Thumb Code    20  hc32f460_interrupts.o(i.IRQ057_Handler)
+    IRQ058_Handler                           0x00002915   Thumb Code    20  hc32f460_interrupts.o(i.IRQ058_Handler)
+    IRQ059_Handler                           0x0000292d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ059_Handler)
+    IRQ060_Handler                           0x00002945   Thumb Code    20  hc32f460_interrupts.o(i.IRQ060_Handler)
+    IRQ061_Handler                           0x0000295d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ061_Handler)
+    IRQ062_Handler                           0x00002975   Thumb Code    20  hc32f460_interrupts.o(i.IRQ062_Handler)
+    IRQ063_Handler                           0x0000298d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ063_Handler)
+    IRQ064_Handler                           0x000029a5   Thumb Code    20  hc32f460_interrupts.o(i.IRQ064_Handler)
+    IRQ065_Handler                           0x000029bd   Thumb Code    20  hc32f460_interrupts.o(i.IRQ065_Handler)
+    IRQ066_Handler                           0x000029d5   Thumb Code    20  hc32f460_interrupts.o(i.IRQ066_Handler)
+    IRQ067_Handler                           0x000029ed   Thumb Code    20  hc32f460_interrupts.o(i.IRQ067_Handler)
+    IRQ068_Handler                           0x00002a05   Thumb Code    20  hc32f460_interrupts.o(i.IRQ068_Handler)
+    IRQ069_Handler                           0x00002a1d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ069_Handler)
+    IRQ070_Handler                           0x00002a35   Thumb Code    20  hc32f460_interrupts.o(i.IRQ070_Handler)
+    IRQ071_Handler                           0x00002a4d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ071_Handler)
+    IRQ072_Handler                           0x00002a65   Thumb Code    20  hc32f460_interrupts.o(i.IRQ072_Handler)
+    IRQ073_Handler                           0x00002a7d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ073_Handler)
+    IRQ074_Handler                           0x00002a95   Thumb Code    20  hc32f460_interrupts.o(i.IRQ074_Handler)
+    IRQ075_Handler                           0x00002aad   Thumb Code    20  hc32f460_interrupts.o(i.IRQ075_Handler)
+    IRQ076_Handler                           0x00002ac5   Thumb Code    20  hc32f460_interrupts.o(i.IRQ076_Handler)
+    IRQ077_Handler                           0x00002add   Thumb Code    20  hc32f460_interrupts.o(i.IRQ077_Handler)
+    IRQ078_Handler                           0x00002af5   Thumb Code    20  hc32f460_interrupts.o(i.IRQ078_Handler)
+    IRQ079_Handler                           0x00002b0d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ079_Handler)
+    IRQ080_Handler                           0x00002b25   Thumb Code    20  hc32f460_interrupts.o(i.IRQ080_Handler)
+    IRQ081_Handler                           0x00002b3d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ081_Handler)
+    IRQ082_Handler                           0x00002b55   Thumb Code    20  hc32f460_interrupts.o(i.IRQ082_Handler)
+    IRQ083_Handler                           0x00002b6d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ083_Handler)
+    IRQ084_Handler                           0x00002b85   Thumb Code    20  hc32f460_interrupts.o(i.IRQ084_Handler)
+    IRQ085_Handler                           0x00002b9d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ085_Handler)
+    IRQ086_Handler                           0x00002bb5   Thumb Code    20  hc32f460_interrupts.o(i.IRQ086_Handler)
+    IRQ087_Handler                           0x00002bcd   Thumb Code    20  hc32f460_interrupts.o(i.IRQ087_Handler)
+    IRQ088_Handler                           0x00002be5   Thumb Code    20  hc32f460_interrupts.o(i.IRQ088_Handler)
+    IRQ089_Handler                           0x00002bfd   Thumb Code    20  hc32f460_interrupts.o(i.IRQ089_Handler)
+    IRQ090_Handler                           0x00002c15   Thumb Code    20  hc32f460_interrupts.o(i.IRQ090_Handler)
+    IRQ091_Handler                           0x00002c2d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ091_Handler)
+    IRQ092_Handler                           0x00002c45   Thumb Code    20  hc32f460_interrupts.o(i.IRQ092_Handler)
+    IRQ093_Handler                           0x00002c5d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ093_Handler)
+    IRQ094_Handler                           0x00002c75   Thumb Code    20  hc32f460_interrupts.o(i.IRQ094_Handler)
+    IRQ095_Handler                           0x00002c8d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ095_Handler)
+    IRQ096_Handler                           0x00002ca5   Thumb Code    20  hc32f460_interrupts.o(i.IRQ096_Handler)
+    IRQ097_Handler                           0x00002cbd   Thumb Code    20  hc32f460_interrupts.o(i.IRQ097_Handler)
+    IRQ098_Handler                           0x00002cd5   Thumb Code    20  hc32f460_interrupts.o(i.IRQ098_Handler)
+    IRQ099_Handler                           0x00002ced   Thumb Code    20  hc32f460_interrupts.o(i.IRQ099_Handler)
+    IRQ100_Handler                           0x00002d05   Thumb Code    20  hc32f460_interrupts.o(i.IRQ100_Handler)
+    IRQ101_Handler                           0x00002d1d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ101_Handler)
+    IRQ102_Handler                           0x00002d35   Thumb Code    20  hc32f460_interrupts.o(i.IRQ102_Handler)
+    IRQ103_Handler                           0x00002d4d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ103_Handler)
+    IRQ104_Handler                           0x00002d65   Thumb Code    20  hc32f460_interrupts.o(i.IRQ104_Handler)
+    IRQ105_Handler                           0x00002d7d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ105_Handler)
+    IRQ106_Handler                           0x00002d95   Thumb Code    20  hc32f460_interrupts.o(i.IRQ106_Handler)
+    IRQ107_Handler                           0x00002dad   Thumb Code    20  hc32f460_interrupts.o(i.IRQ107_Handler)
+    IRQ108_Handler                           0x00002dc5   Thumb Code    20  hc32f460_interrupts.o(i.IRQ108_Handler)
+    IRQ109_Handler                           0x00002ddd   Thumb Code    20  hc32f460_interrupts.o(i.IRQ109_Handler)
+    IRQ110_Handler                           0x00002df5   Thumb Code    20  hc32f460_interrupts.o(i.IRQ110_Handler)
+    IRQ111_Handler                           0x00002e0d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ111_Handler)
+    IRQ112_Handler                           0x00002e25   Thumb Code    20  hc32f460_interrupts.o(i.IRQ112_Handler)
+    IRQ113_Handler                           0x00002e3d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ113_Handler)
+    IRQ114_Handler                           0x00002e55   Thumb Code    20  hc32f460_interrupts.o(i.IRQ114_Handler)
+    IRQ115_Handler                           0x00002e6d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ115_Handler)
+    IRQ116_Handler                           0x00002e85   Thumb Code    20  hc32f460_interrupts.o(i.IRQ116_Handler)
+    IRQ117_Handler                           0x00002e9d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ117_Handler)
+    IRQ118_Handler                           0x00002eb5   Thumb Code    20  hc32f460_interrupts.o(i.IRQ118_Handler)
+    IRQ119_Handler                           0x00002ecd   Thumb Code    20  hc32f460_interrupts.o(i.IRQ119_Handler)
+    IRQ120_Handler                           0x00002ee5   Thumb Code    20  hc32f460_interrupts.o(i.IRQ120_Handler)
+    IRQ121_Handler                           0x00002efd   Thumb Code    20  hc32f460_interrupts.o(i.IRQ121_Handler)
+    IRQ122_Handler                           0x00002f15   Thumb Code    20  hc32f460_interrupts.o(i.IRQ122_Handler)
+    IRQ123_Handler                           0x00002f2d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ123_Handler)
+    IRQ124_Handler                           0x00002f45   Thumb Code    20  hc32f460_interrupts.o(i.IRQ124_Handler)
+    IRQ125_Handler                           0x00002f5d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ125_Handler)
+    IRQ126_Handler                           0x00002f75   Thumb Code    20  hc32f460_interrupts.o(i.IRQ126_Handler)
+    IRQ127_Handler                           0x00002f8d   Thumb Code    20  hc32f460_interrupts.o(i.IRQ127_Handler)
+    KEYSCAN_GetColIdx                        0x00002fa5   Thumb Code    10  hc32f460_keyscan.o(i.KEYSCAN_GetColIdx)
+    KEYSCAN_Init                             0x00002fb5   Thumb Code   406  hc32f460_keyscan.o(i.KEYSCAN_Init)
+    KEYSCAN_Start                            0x00003181   Thumb Code    18  hc32f460_keyscan.o(i.KEYSCAN_Start)
+    MemManage_Handler                        0x000031dd   Thumb Code     8  hc32f460_interrupts.o(i.MemManage_Handler)
+    NMI_Handler                              0x000031e5   Thumb Code     8  hc32f460_interrupts.o(i.NMI_Handler)
+    NMI_IrqHandler                           0x000031ed   Thumb Code    32  hc32f460_exint_nmi_swi.o(i.NMI_IrqHandler)
+    PORT_GetBit                              0x00003245   Thumb Code   162  hc32f460_gpio.o(i.PORT_GetBit)
+    PORT_Init                                0x00003319   Thumb Code   456  hc32f460_gpio.o(i.PORT_Init)
+    PORT_Lock                                0x00003511   Thumb Code    10  hc32f460_gpio.o(i.PORT_Lock)
+    PORT_SetFunc                             0x00003521   Thumb Code   204  hc32f460_gpio.o(i.PORT_SetFunc)
+    PORT_Toggle                              0x0000361d   Thumb Code    62  hc32f460_gpio.o(i.PORT_Toggle)
+    PORT_Unlock                              0x0000368d   Thumb Code    10  hc32f460_gpio.o(i.PORT_Unlock)
+    PWC_Fcg0PeriphClockCmd                   0x0000369d   Thumb Code    92  hc32f460_pwc.o(i.PWC_Fcg0PeriphClockCmd)
+    PWC_Fcg1PeriphClockCmd                   0x00003731   Thumb Code    80  hc32f460_pwc.o(i.PWC_Fcg1PeriphClockCmd)
+    PWC_HS2HP                                0x000037b5   Thumb Code    64  hc32f460_pwc.o(i.PWC_HS2HP)
+    PendSV_Handler                           0x000037fd   Thumb Code     8  hc32f460_interrupts.o(i.PendSV_Handler)
+    SRAM_CK_Disable                          0x00003805   Thumb Code    10  hc32f460_sram.o(i.SRAM_CK_Disable)
+    SRAM_CK_Enable                           0x00003815   Thumb Code    10  hc32f460_sram.o(i.SRAM_CK_Enable)
+    SRAM_Init                                0x00003825   Thumb Code   350  hc32f460_sram.o(i.SRAM_Init)
+    SRAM_WT_Disable                          0x000039b5   Thumb Code    10  hc32f460_sram.o(i.SRAM_WT_Disable)
+    SRAM_WT_Enable                           0x000039c5   Thumb Code    10  hc32f460_sram.o(i.SRAM_WT_Enable)
+    SVC_Handler                              0x000039d5   Thumb Code     8  hc32f460_interrupts.o(i.SVC_Handler)
+    SysTick_Handler                          0x000039dd   Thumb Code     8  hc32f460_interrupts.o(i.SysTick_Handler)
+    SystemCoreClockUpdate                    0x000039e5   Thumb Code   206  system_hc32f460.o(i.SystemCoreClockUpdate)
+    SystemInit                               0x00003ad1   Thumb Code     8  system_hc32f460.o(i.SystemInit)
+    UsageFault_Handler                       0x00003ad9   Thumb Code     8  hc32f460_interrupts.o(i.UsageFault_Handler)
+    __scatterload_copy                       0x00003ae1   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_zeroinit                   0x00003aef   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    enIrqRegistration                        0x00003afd   Thumb Code   146  hc32f460_interrupts.o(i.enIrqRegistration)
+    main                                     0x00003bc9   Thumb Code   190  main.o(i.main)
+    Region$$Table$$Base                      0x00003d14   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00003d34   Number         0  anon$$obj.o(Region$$Table)
+    HRC_VALUE                                0x1fff8000   Data           4  system_hc32f460.o(.data)
+    SystemCoreClock                          0x1fff8004   Data           4  system_hc32f460.o(.data)
+    IrqHandler                               0x1fff8010   Data         512  hc32f460_interrupts.o(.bss)
+    __initial_sp                             0x1fff8610   Data           0  startup_hc32f460.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000281
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00003d44, Max: 0x00080000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00003d34, Max: 0x00080000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x00000280   Data   RO            3    RESET               startup_hc32f460.o
+    0x00000280   0x00000280   0x00000000   Code   RO         2537  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x00000280   0x00000280   0x00000004   Code   RO         2556    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x00000284   0x00000284   0x00000004   Code   RO         2559    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x00000288   0x00000288   0x00000000   Code   RO         2561    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x00000288   0x00000288   0x00000000   Code   RO         2563    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x00000288   0x00000288   0x00000008   Code   RO         2564    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x00000290   0x00000290   0x00000000   Code   RO         2566    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x00000290   0x00000290   0x00000000   Code   RO         2568    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x00000290   0x00000290   0x00000004   Code   RO         2557    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x00000294   0x00000294   0x00000058   Code   RO            4    .text               startup_hc32f460.o
+    0x000002ec   0x000002ec   0x00000024   Code   RO         2540    .text               mc_w.l(memseta.o)
+    0x00000310   0x00000310   0x000000b0   Code   RO         2542    .text               mf_w.l(fadd.o)
+    0x000003c0   0x000003c0   0x0000000a   Code   RO         2548    .text               mf_w.l(ffltui.o)
+    0x000003ca   0x000003ca   0x00000028   Code   RO         2550    .text               mf_w.l(ffixui.o)
+    0x000003f2   0x000003f2   0x00000000   Code   RO         2570    .text               mc_w.l(iusefp.o)
+    0x000003f2   0x000003f2   0x00000008   Code   RO          661    i.BusFault_Handler  hc32f460_interrupts.o
+    0x000003fa   0x000003fa   0x00000004   Code   RO         1564    i.Ddl_AssertHandler  hc32f460_utility.o
+    0x000003fe   0x000003fe   0x00000002   Code   RO         2578    i.__scatterload_null  mc_w.l(handlers.o)
+    0x00000400   0x00000400   0x00000020   Data   RO          640    .ARM.__AT_0x00000400  hc32f460_icg.o
+    0x00000420   0x00000420   0x00000064   Code   RO         2544    .text               mf_w.l(fmul.o)
+    0x00000484   0x00000484   0x0000007c   Code   RO         2546    .text               mf_w.l(fdiv.o)
+    0x00000500   0x00000500   0x00000014   Code   RO         2552    .text               mf_w.l(cfcmple.o)
+    0x00000514   0x00000514   0x00000014   Code   RO         2554    .text               mf_w.l(cfrcmple.o)
+    0x00000528   0x00000528   0x0000006e   Code   RO         2571    .text               mf_w.l(fepilogue.o)
+    0x00000596   0x00000596   0x00000002   PAD
+    0x00000598   0x00000598   0x00000024   Code   RO         2573    .text               mc_w.l(init.o)
+    0x000005bc   0x000005bc   0x000000d4   Code   RO         2418    i.BSP_CLK_Init      ev_hc32f460_lqfp100_v1.o
+    0x00000690   0x00000690   0x00000084   Code   RO         2419    i.BSP_KEY_COL_Init  ev_hc32f460_lqfp100_v1.o
+    0x00000714   0x00000714   0x00000020   Code   RO         2420    i.BSP_KEY_GetStatus  ev_hc32f460_lqfp100_v1.o
+    0x00000734   0x00000734   0x0000002c   Code   RO         2421    i.BSP_KEY_Init      ev_hc32f460_lqfp100_v1.o
+    0x00000760   0x00000760   0x00000028   Code   RO         2422    i.BSP_KEY_KEY2_IrqHandler  ev_hc32f460_lqfp100_v1.o
+    0x00000788   0x00000788   0x00000028   Code   RO         2423    i.BSP_KEY_KEY3_IrqHandler  ev_hc32f460_lqfp100_v1.o
+    0x000007b0   0x000007b0   0x00000028   Code   RO         2424    i.BSP_KEY_KEY4_IrqHandler  ev_hc32f460_lqfp100_v1.o
+    0x000007d8   0x000007d8   0x00000028   Code   RO         2425    i.BSP_KEY_KEY5_IrqHandler  ev_hc32f460_lqfp100_v1.o
+    0x00000800   0x00000800   0x00000048   Code   RO         2426    i.BSP_KEY_ROW0_IrqCallback  ev_hc32f460_lqfp100_v1.o
+    0x00000848   0x00000848   0x00000048   Code   RO         2427    i.BSP_KEY_ROW1_IrqCallback  ev_hc32f460_lqfp100_v1.o
+    0x00000890   0x00000890   0x00000050   Code   RO         2428    i.BSP_KEY_ROW2_IrqCallback  ev_hc32f460_lqfp100_v1.o
+    0x000008e0   0x000008e0   0x00000124   Code   RO         2429    i.BSP_KEY_ROW_Init  ev_hc32f460_lqfp100_v1.o
+    0x00000a04   0x00000a04   0x00000038   Code   RO         2430    i.BSP_LED_Init      ev_hc32f460_lqfp100_v1.o
+    0x00000a3c   0x00000a3c   0x00000034   Code   RO         2433    i.BSP_LED_Toggle    ev_hc32f460_lqfp100_v1.o
+    0x00000a70   0x00000a70   0x000000c8   Code   RO         2065    i.CLK_GetFlagStatus  hc32f460_clk.o
+    0x00000b38   0x00000b38   0x000000c4   Code   RO         2071    i.CLK_LrcCmd        hc32f460_clk.o
+    0x00000bfc   0x00000bfc   0x000000d8   Code   RO         2073    i.CLK_MpllCmd       hc32f460_clk.o
+    0x00000cd4   0x00000cd4   0x000001c0   Code   RO         2074    i.CLK_MpllConfig    hc32f460_clk.o
+    0x00000e94   0x00000e94   0x00000084   Code   RO         2081    i.CLK_SetPllSource  hc32f460_clk.o
+    0x00000f18   0x00000f18   0x00000130   Code   RO         2082    i.CLK_SetSysClkSource  hc32f460_clk.o
+    0x00001048   0x00001048   0x000001b0   Code   RO         2084    i.CLK_SysClkConfig  hc32f460_clk.o
+    0x000011f8   0x000011f8   0x00000120   Code   RO         2091    i.CLK_XtalCmd       hc32f460_clk.o
+    0x00001318   0x00001318   0x00000064   Code   RO         2092    i.CLK_XtalConfig    hc32f460_clk.o
+    0x0000137c   0x0000137c   0x0000002c   Code   RO         1565    i.Ddl_Delay1ms      hc32f460_utility.o
+    0x000013a8   0x000013a8   0x00000008   Code   RO          662    i.DebugMon_Handler  hc32f460_interrupts.o
+    0x000013b0   0x000013b0   0x00000018   Code   RO          488    i.EFM_Lock          hc32f460_efm.o
+    0x000013c8   0x000013c8   0x00000090   Code   RO          497    i.EFM_SetLatency    hc32f460_efm.o
+    0x00001458   0x00001458   0x00000014   Code   RO          502    i.EFM_Unlock        hc32f460_efm.o
+    0x0000146c   0x0000146c   0x000000d4   Code   RO         1642    i.EXINT_Init        hc32f460_exint_nmi_swi.o
+    0x00001540   0x00001540   0x00000018   Code   RO         1643    i.EXINT_IrqFlgClr   hc32f460_exint_nmi_swi.o
+    0x00001558   0x00001558   0x000000a4   Code   RO         1644    i.EXINT_IrqFlgGet   hc32f460_exint_nmi_swi.o
+    0x000015fc   0x000015fc   0x00000008   Code   RO          663    i.HardFault_Handler  hc32f460_interrupts.o
+    0x00001604   0x00001604   0x00000080   Code   RO         1788    i.I2C_AckConfig     hc32f460_i2c.o
+    0x00001684   0x00001684   0x00000270   Code   RO         1790    i.I2C_BaudrateConfig  hc32f460_i2c.o
+    0x000018f4   0x000018f4   0x00000094   Code   RO         1791    i.I2C_BusWaitCmd    hc32f460_i2c.o
+    0x00001988   0x00001988   0x00000070   Code   RO         1792    i.I2C_ClearStatus   hc32f460_i2c.o
+    0x000019f8   0x000019f8   0x00000080   Code   RO         1794    i.I2C_Cmd           hc32f460_i2c.o
+    0x00001a78   0x00001a78   0x00000078   Code   RO         1795    i.I2C_DeInit        hc32f460_i2c.o
+    0x00001af0   0x00001af0   0x0000007c   Code   RO         1801    i.I2C_GenerateStart  hc32f460_i2c.o
+    0x00001b6c   0x00001b6c   0x0000007c   Code   RO         1802    i.I2C_GenerateStop  hc32f460_i2c.o
+    0x00001be8   0x00001be8   0x000000e0   Code   RO         1803    i.I2C_GetStatus     hc32f460_i2c.o
+    0x00001cc8   0x00001cc8   0x00000110   Code   RO         1804    i.I2C_Init          hc32f460_i2c.o
+    0x00001dd8   0x00001dd8   0x00000110   Code   RO         1806    i.I2C_MasterDataReceiveAndStop  hc32f460_i2c.o
+    0x00001ee8   0x00001ee8   0x00000080   Code   RO           84    i.I2C_Master_Receive  main.o
+    0x00001f68   0x00001f68   0x00000068   Code   RO           85    i.I2C_Master_Transmit  main.o
+    0x00001fd0   0x00001fd0   0x00000064   Code   RO         1807    i.I2C_ReadData      hc32f460_i2c.o
+    0x00002034   0x00002034   0x00000080   Code   RO         1814    i.I2C_SoftwareResetCmd  hc32f460_i2c.o
+    0x000020b4   0x000020b4   0x00000090   Code   RO         1815    i.I2C_Start         hc32f460_i2c.o
+    0x00002144   0x00002144   0x00000098   Code   RO         1816    i.I2C_Stop          hc32f460_i2c.o
+    0x000021dc   0x000021dc   0x000000e8   Code   RO         1818    i.I2C_TransAddr     hc32f460_i2c.o
+    0x000022c4   0x000022c4   0x000000cc   Code   RO         1819    i.I2C_TransData     hc32f460_i2c.o
+    0x00002390   0x00002390   0x0000002a   Code   RO         1820    i.I2C_WaitStatus    hc32f460_i2c.o
+    0x000023ba   0x000023ba   0x00000002   PAD
+    0x000023bc   0x000023bc   0x00000068   Code   RO         1821    i.I2C_WriteData     hc32f460_i2c.o
+    0x00002424   0x00002424   0x00000014   Code   RO          664    i.IRQ000_Handler    hc32f460_interrupts.o
+    0x00002438   0x00002438   0x00000014   Code   RO          665    i.IRQ001_Handler    hc32f460_interrupts.o
+    0x0000244c   0x0000244c   0x00000014   Code   RO          666    i.IRQ002_Handler    hc32f460_interrupts.o
+    0x00002460   0x00002460   0x00000014   Code   RO          667    i.IRQ003_Handler    hc32f460_interrupts.o
+    0x00002474   0x00002474   0x00000014   Code   RO          668    i.IRQ004_Handler    hc32f460_interrupts.o
+    0x00002488   0x00002488   0x00000014   Code   RO          669    i.IRQ005_Handler    hc32f460_interrupts.o
+    0x0000249c   0x0000249c   0x00000014   Code   RO          670    i.IRQ006_Handler    hc32f460_interrupts.o
+    0x000024b0   0x000024b0   0x00000014   Code   RO          671    i.IRQ007_Handler    hc32f460_interrupts.o
+    0x000024c4   0x000024c4   0x00000014   Code   RO          672    i.IRQ008_Handler    hc32f460_interrupts.o
+    0x000024d8   0x000024d8   0x00000014   Code   RO          673    i.IRQ009_Handler    hc32f460_interrupts.o
+    0x000024ec   0x000024ec   0x00000014   Code   RO          674    i.IRQ010_Handler    hc32f460_interrupts.o
+    0x00002500   0x00002500   0x00000014   Code   RO          675    i.IRQ011_Handler    hc32f460_interrupts.o
+    0x00002514   0x00002514   0x00000014   Code   RO          676    i.IRQ012_Handler    hc32f460_interrupts.o
+    0x00002528   0x00002528   0x00000014   Code   RO          677    i.IRQ013_Handler    hc32f460_interrupts.o
+    0x0000253c   0x0000253c   0x00000014   Code   RO          678    i.IRQ014_Handler    hc32f460_interrupts.o
+    0x00002550   0x00002550   0x00000014   Code   RO          679    i.IRQ015_Handler    hc32f460_interrupts.o
+    0x00002564   0x00002564   0x00000014   Code   RO          680    i.IRQ016_Handler    hc32f460_interrupts.o
+    0x00002578   0x00002578   0x00000014   Code   RO          681    i.IRQ017_Handler    hc32f460_interrupts.o
+    0x0000258c   0x0000258c   0x00000014   Code   RO          682    i.IRQ018_Handler    hc32f460_interrupts.o
+    0x000025a0   0x000025a0   0x00000014   Code   RO          683    i.IRQ019_Handler    hc32f460_interrupts.o
+    0x000025b4   0x000025b4   0x00000014   Code   RO          684    i.IRQ020_Handler    hc32f460_interrupts.o
+    0x000025c8   0x000025c8   0x00000014   Code   RO          685    i.IRQ021_Handler    hc32f460_interrupts.o
+    0x000025dc   0x000025dc   0x00000014   Code   RO          686    i.IRQ022_Handler    hc32f460_interrupts.o
+    0x000025f0   0x000025f0   0x00000014   Code   RO          687    i.IRQ023_Handler    hc32f460_interrupts.o
+    0x00002604   0x00002604   0x00000014   Code   RO          688    i.IRQ024_Handler    hc32f460_interrupts.o
+    0x00002618   0x00002618   0x00000014   Code   RO          689    i.IRQ025_Handler    hc32f460_interrupts.o
+    0x0000262c   0x0000262c   0x00000014   Code   RO          690    i.IRQ026_Handler    hc32f460_interrupts.o
+    0x00002640   0x00002640   0x00000014   Code   RO          691    i.IRQ027_Handler    hc32f460_interrupts.o
+    0x00002654   0x00002654   0x00000014   Code   RO          692    i.IRQ028_Handler    hc32f460_interrupts.o
+    0x00002668   0x00002668   0x00000014   Code   RO          693    i.IRQ029_Handler    hc32f460_interrupts.o
+    0x0000267c   0x0000267c   0x00000014   Code   RO          694    i.IRQ030_Handler    hc32f460_interrupts.o
+    0x00002690   0x00002690   0x00000014   Code   RO          695    i.IRQ031_Handler    hc32f460_interrupts.o
+    0x000026a4   0x000026a4   0x00000018   Code   RO          696    i.IRQ032_Handler    hc32f460_interrupts.o
+    0x000026bc   0x000026bc   0x00000018   Code   RO          697    i.IRQ033_Handler    hc32f460_interrupts.o
+    0x000026d4   0x000026d4   0x00000018   Code   RO          698    i.IRQ034_Handler    hc32f460_interrupts.o
+    0x000026ec   0x000026ec   0x00000018   Code   RO          699    i.IRQ035_Handler    hc32f460_interrupts.o
+    0x00002704   0x00002704   0x00000018   Code   RO          700    i.IRQ036_Handler    hc32f460_interrupts.o
+    0x0000271c   0x0000271c   0x00000018   Code   RO          701    i.IRQ037_Handler    hc32f460_interrupts.o
+    0x00002734   0x00002734   0x00000018   Code   RO          702    i.IRQ038_Handler    hc32f460_interrupts.o
+    0x0000274c   0x0000274c   0x00000018   Code   RO          703    i.IRQ039_Handler    hc32f460_interrupts.o
+    0x00002764   0x00002764   0x00000018   Code   RO          704    i.IRQ040_Handler    hc32f460_interrupts.o
+    0x0000277c   0x0000277c   0x00000018   Code   RO          705    i.IRQ041_Handler    hc32f460_interrupts.o
+    0x00002794   0x00002794   0x00000018   Code   RO          706    i.IRQ042_Handler    hc32f460_interrupts.o
+    0x000027ac   0x000027ac   0x00000018   Code   RO          707    i.IRQ043_Handler    hc32f460_interrupts.o
+    0x000027c4   0x000027c4   0x00000018   Code   RO          708    i.IRQ044_Handler    hc32f460_interrupts.o
+    0x000027dc   0x000027dc   0x00000018   Code   RO          709    i.IRQ045_Handler    hc32f460_interrupts.o
+    0x000027f4   0x000027f4   0x00000018   Code   RO          710    i.IRQ046_Handler    hc32f460_interrupts.o
+    0x0000280c   0x0000280c   0x00000018   Code   RO          711    i.IRQ047_Handler    hc32f460_interrupts.o
+    0x00002824   0x00002824   0x00000018   Code   RO          712    i.IRQ048_Handler    hc32f460_interrupts.o
+    0x0000283c   0x0000283c   0x00000018   Code   RO          713    i.IRQ049_Handler    hc32f460_interrupts.o
+    0x00002854   0x00002854   0x00000018   Code   RO          714    i.IRQ050_Handler    hc32f460_interrupts.o
+    0x0000286c   0x0000286c   0x00000018   Code   RO          715    i.IRQ051_Handler    hc32f460_interrupts.o
+    0x00002884   0x00002884   0x00000018   Code   RO          716    i.IRQ052_Handler    hc32f460_interrupts.o
+    0x0000289c   0x0000289c   0x00000018   Code   RO          717    i.IRQ053_Handler    hc32f460_interrupts.o
+    0x000028b4   0x000028b4   0x00000018   Code   RO          718    i.IRQ054_Handler    hc32f460_interrupts.o
+    0x000028cc   0x000028cc   0x00000018   Code   RO          719    i.IRQ055_Handler    hc32f460_interrupts.o
+    0x000028e4   0x000028e4   0x00000018   Code   RO          720    i.IRQ056_Handler    hc32f460_interrupts.o
+    0x000028fc   0x000028fc   0x00000018   Code   RO          721    i.IRQ057_Handler    hc32f460_interrupts.o
+    0x00002914   0x00002914   0x00000018   Code   RO          722    i.IRQ058_Handler    hc32f460_interrupts.o
+    0x0000292c   0x0000292c   0x00000018   Code   RO          723    i.IRQ059_Handler    hc32f460_interrupts.o
+    0x00002944   0x00002944   0x00000018   Code   RO          724    i.IRQ060_Handler    hc32f460_interrupts.o
+    0x0000295c   0x0000295c   0x00000018   Code   RO          725    i.IRQ061_Handler    hc32f460_interrupts.o
+    0x00002974   0x00002974   0x00000018   Code   RO          726    i.IRQ062_Handler    hc32f460_interrupts.o
+    0x0000298c   0x0000298c   0x00000018   Code   RO          727    i.IRQ063_Handler    hc32f460_interrupts.o
+    0x000029a4   0x000029a4   0x00000018   Code   RO          728    i.IRQ064_Handler    hc32f460_interrupts.o
+    0x000029bc   0x000029bc   0x00000018   Code   RO          729    i.IRQ065_Handler    hc32f460_interrupts.o
+    0x000029d4   0x000029d4   0x00000018   Code   RO          730    i.IRQ066_Handler    hc32f460_interrupts.o
+    0x000029ec   0x000029ec   0x00000018   Code   RO          731    i.IRQ067_Handler    hc32f460_interrupts.o
+    0x00002a04   0x00002a04   0x00000018   Code   RO          732    i.IRQ068_Handler    hc32f460_interrupts.o
+    0x00002a1c   0x00002a1c   0x00000018   Code   RO          733    i.IRQ069_Handler    hc32f460_interrupts.o
+    0x00002a34   0x00002a34   0x00000018   Code   RO          734    i.IRQ070_Handler    hc32f460_interrupts.o
+    0x00002a4c   0x00002a4c   0x00000018   Code   RO          735    i.IRQ071_Handler    hc32f460_interrupts.o
+    0x00002a64   0x00002a64   0x00000018   Code   RO          736    i.IRQ072_Handler    hc32f460_interrupts.o
+    0x00002a7c   0x00002a7c   0x00000018   Code   RO          737    i.IRQ073_Handler    hc32f460_interrupts.o
+    0x00002a94   0x00002a94   0x00000018   Code   RO          738    i.IRQ074_Handler    hc32f460_interrupts.o
+    0x00002aac   0x00002aac   0x00000018   Code   RO          739    i.IRQ075_Handler    hc32f460_interrupts.o
+    0x00002ac4   0x00002ac4   0x00000018   Code   RO          740    i.IRQ076_Handler    hc32f460_interrupts.o
+    0x00002adc   0x00002adc   0x00000018   Code   RO          741    i.IRQ077_Handler    hc32f460_interrupts.o
+    0x00002af4   0x00002af4   0x00000018   Code   RO          742    i.IRQ078_Handler    hc32f460_interrupts.o
+    0x00002b0c   0x00002b0c   0x00000018   Code   RO          743    i.IRQ079_Handler    hc32f460_interrupts.o
+    0x00002b24   0x00002b24   0x00000018   Code   RO          744    i.IRQ080_Handler    hc32f460_interrupts.o
+    0x00002b3c   0x00002b3c   0x00000018   Code   RO          745    i.IRQ081_Handler    hc32f460_interrupts.o
+    0x00002b54   0x00002b54   0x00000018   Code   RO          746    i.IRQ082_Handler    hc32f460_interrupts.o
+    0x00002b6c   0x00002b6c   0x00000018   Code   RO          747    i.IRQ083_Handler    hc32f460_interrupts.o
+    0x00002b84   0x00002b84   0x00000018   Code   RO          748    i.IRQ084_Handler    hc32f460_interrupts.o
+    0x00002b9c   0x00002b9c   0x00000018   Code   RO          749    i.IRQ085_Handler    hc32f460_interrupts.o
+    0x00002bb4   0x00002bb4   0x00000018   Code   RO          750    i.IRQ086_Handler    hc32f460_interrupts.o
+    0x00002bcc   0x00002bcc   0x00000018   Code   RO          751    i.IRQ087_Handler    hc32f460_interrupts.o
+    0x00002be4   0x00002be4   0x00000018   Code   RO          752    i.IRQ088_Handler    hc32f460_interrupts.o
+    0x00002bfc   0x00002bfc   0x00000018   Code   RO          753    i.IRQ089_Handler    hc32f460_interrupts.o
+    0x00002c14   0x00002c14   0x00000018   Code   RO          754    i.IRQ090_Handler    hc32f460_interrupts.o
+    0x00002c2c   0x00002c2c   0x00000018   Code   RO          755    i.IRQ091_Handler    hc32f460_interrupts.o
+    0x00002c44   0x00002c44   0x00000018   Code   RO          756    i.IRQ092_Handler    hc32f460_interrupts.o
+    0x00002c5c   0x00002c5c   0x00000018   Code   RO          757    i.IRQ093_Handler    hc32f460_interrupts.o
+    0x00002c74   0x00002c74   0x00000018   Code   RO          758    i.IRQ094_Handler    hc32f460_interrupts.o
+    0x00002c8c   0x00002c8c   0x00000018   Code   RO          759    i.IRQ095_Handler    hc32f460_interrupts.o
+    0x00002ca4   0x00002ca4   0x00000018   Code   RO          760    i.IRQ096_Handler    hc32f460_interrupts.o
+    0x00002cbc   0x00002cbc   0x00000018   Code   RO          761    i.IRQ097_Handler    hc32f460_interrupts.o
+    0x00002cd4   0x00002cd4   0x00000018   Code   RO          762    i.IRQ098_Handler    hc32f460_interrupts.o
+    0x00002cec   0x00002cec   0x00000018   Code   RO          763    i.IRQ099_Handler    hc32f460_interrupts.o
+    0x00002d04   0x00002d04   0x00000018   Code   RO          764    i.IRQ100_Handler    hc32f460_interrupts.o
+    0x00002d1c   0x00002d1c   0x00000018   Code   RO          765    i.IRQ101_Handler    hc32f460_interrupts.o
+    0x00002d34   0x00002d34   0x00000018   Code   RO          766    i.IRQ102_Handler    hc32f460_interrupts.o
+    0x00002d4c   0x00002d4c   0x00000018   Code   RO          767    i.IRQ103_Handler    hc32f460_interrupts.o
+    0x00002d64   0x00002d64   0x00000018   Code   RO          768    i.IRQ104_Handler    hc32f460_interrupts.o
+    0x00002d7c   0x00002d7c   0x00000018   Code   RO          769    i.IRQ105_Handler    hc32f460_interrupts.o
+    0x00002d94   0x00002d94   0x00000018   Code   RO          770    i.IRQ106_Handler    hc32f460_interrupts.o
+    0x00002dac   0x00002dac   0x00000018   Code   RO          771    i.IRQ107_Handler    hc32f460_interrupts.o
+    0x00002dc4   0x00002dc4   0x00000018   Code   RO          772    i.IRQ108_Handler    hc32f460_interrupts.o
+    0x00002ddc   0x00002ddc   0x00000018   Code   RO          773    i.IRQ109_Handler    hc32f460_interrupts.o
+    0x00002df4   0x00002df4   0x00000018   Code   RO          774    i.IRQ110_Handler    hc32f460_interrupts.o
+    0x00002e0c   0x00002e0c   0x00000018   Code   RO          775    i.IRQ111_Handler    hc32f460_interrupts.o
+    0x00002e24   0x00002e24   0x00000018   Code   RO          776    i.IRQ112_Handler    hc32f460_interrupts.o
+    0x00002e3c   0x00002e3c   0x00000018   Code   RO          777    i.IRQ113_Handler    hc32f460_interrupts.o
+    0x00002e54   0x00002e54   0x00000018   Code   RO          778    i.IRQ114_Handler    hc32f460_interrupts.o
+    0x00002e6c   0x00002e6c   0x00000018   Code   RO          779    i.IRQ115_Handler    hc32f460_interrupts.o
+    0x00002e84   0x00002e84   0x00000018   Code   RO          780    i.IRQ116_Handler    hc32f460_interrupts.o
+    0x00002e9c   0x00002e9c   0x00000018   Code   RO          781    i.IRQ117_Handler    hc32f460_interrupts.o
+    0x00002eb4   0x00002eb4   0x00000018   Code   RO          782    i.IRQ118_Handler    hc32f460_interrupts.o
+    0x00002ecc   0x00002ecc   0x00000018   Code   RO          783    i.IRQ119_Handler    hc32f460_interrupts.o
+    0x00002ee4   0x00002ee4   0x00000018   Code   RO          784    i.IRQ120_Handler    hc32f460_interrupts.o
+    0x00002efc   0x00002efc   0x00000018   Code   RO          785    i.IRQ121_Handler    hc32f460_interrupts.o
+    0x00002f14   0x00002f14   0x00000018   Code   RO          786    i.IRQ122_Handler    hc32f460_interrupts.o
+    0x00002f2c   0x00002f2c   0x00000018   Code   RO          787    i.IRQ123_Handler    hc32f460_interrupts.o
+    0x00002f44   0x00002f44   0x00000018   Code   RO          788    i.IRQ124_Handler    hc32f460_interrupts.o
+    0x00002f5c   0x00002f5c   0x00000018   Code   RO          789    i.IRQ125_Handler    hc32f460_interrupts.o
+    0x00002f74   0x00002f74   0x00000018   Code   RO          790    i.IRQ126_Handler    hc32f460_interrupts.o
+    0x00002f8c   0x00002f8c   0x00000018   Code   RO          791    i.IRQ127_Handler    hc32f460_interrupts.o
+    0x00002fa4   0x00002fa4   0x00000010   Code   RO         2011    i.KEYSCAN_GetColIdx  hc32f460_keyscan.o
+    0x00002fb4   0x00002fb4   0x000001cc   Code   RO         2012    i.KEYSCAN_Init      hc32f460_keyscan.o
+    0x00003180   0x00003180   0x00000018   Code   RO         2013    i.KEYSCAN_Start     hc32f460_keyscan.o
+    0x00003198   0x00003198   0x00000044   Code   RO           86    i.Master_Initialize  main.o
+    0x000031dc   0x000031dc   0x00000008   Code   RO          792    i.MemManage_Handler  hc32f460_interrupts.o
+    0x000031e4   0x000031e4   0x00000008   Code   RO          793    i.NMI_Handler       hc32f460_interrupts.o
+    0x000031ec   0x000031ec   0x00000058   Code   RO         1649    i.NMI_IrqHandler    hc32f460_exint_nmi_swi.o
+    0x00003244   0x00003244   0x000000d4   Code   RO         2301    i.PORT_GetBit       hc32f460_gpio.o
+    0x00003318   0x00003318   0x000001f8   Code   RO         2303    i.PORT_Init         hc32f460_gpio.o
+    0x00003510   0x00003510   0x00000010   Code   RO         2304    i.PORT_Lock         hc32f460_gpio.o
+    0x00003520   0x00003520   0x000000fc   Code   RO         2310    i.PORT_SetFunc      hc32f460_gpio.o
+    0x0000361c   0x0000361c   0x00000070   Code   RO         2313    i.PORT_Toggle       hc32f460_gpio.o
+    0x0000368c   0x0000368c   0x00000010   Code   RO         2314    i.PORT_Unlock       hc32f460_gpio.o
+    0x0000369c   0x0000369c   0x00000094   Code   RO          178    i.PWC_Fcg0PeriphClockCmd  hc32f460_pwc.o
+    0x00003730   0x00003730   0x00000084   Code   RO          179    i.PWC_Fcg1PeriphClockCmd  hc32f460_pwc.o
+    0x000037b4   0x000037b4   0x00000048   Code   RO          188    i.PWC_HS2HP         hc32f460_pwc.o
+    0x000037fc   0x000037fc   0x00000008   Code   RO          794    i.PendSV_Handler    hc32f460_interrupts.o
+    0x00003804   0x00003804   0x00000010   Code   RO         1722    i.SRAM_CK_Disable   hc32f460_sram.o
+    0x00003814   0x00003814   0x00000010   Code   RO         1723    i.SRAM_CK_Enable    hc32f460_sram.o
+    0x00003824   0x00003824   0x00000190   Code   RO         1727    i.SRAM_Init         hc32f460_sram.o
+    0x000039b4   0x000039b4   0x00000010   Code   RO         1728    i.SRAM_WT_Disable   hc32f460_sram.o
+    0x000039c4   0x000039c4   0x00000010   Code   RO         1729    i.SRAM_WT_Enable    hc32f460_sram.o
+    0x000039d4   0x000039d4   0x00000008   Code   RO          795    i.SVC_Handler       hc32f460_interrupts.o
+    0x000039dc   0x000039dc   0x00000008   Code   RO          796    i.SysTick_Handler   hc32f460_interrupts.o
+    0x000039e4   0x000039e4   0x000000ec   Code   RO           13    i.SystemCoreClockUpdate  system_hc32f460.o
+    0x00003ad0   0x00003ad0   0x00000008   Code   RO           14    i.SystemInit        system_hc32f460.o
+    0x00003ad8   0x00003ad8   0x00000008   Code   RO          797    i.UsageFault_Handler  hc32f460_interrupts.o
+    0x00003ae0   0x00003ae0   0x0000000e   Code   RO         2577    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x00003aee   0x00003aee   0x0000000e   Code   RO         2579    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x00003afc   0x00003afc   0x000000cc   Code   RO          804    i.enIrqRegistration  hc32f460_interrupts.o
+    0x00003bc8   0x00003bc8   0x000000be   Code   RO           87    i.main              main.o
+    0x00003c86   0x00003c86   0x00000002   PAD
+    0x00003c88   0x00003c88   0x0000008c   Data   RO         2435    .constdata          ev_hc32f460_lqfp100_v1.o
+    0x00003d14   0x00003d14   0x00000020   Data   RO         2575    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Exec base: 0x1fff8000, Load base: 0x00003d34, Size: 0x00000610, Max: 0x0002f000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x1fff8000   0x00003d34   0x00000008   Data   RW           15    .data               system_hc32f460.o
+    0x1fff8008   0x00003d3c   0x00000004   Data   RW         1652    .data               hc32f460_exint_nmi_swi.o
+    0x1fff800c   0x00003d40   0x00000004   Data   RW         2436    .data               ev_hc32f460_lqfp100_v1.o
+    0x1fff8010        -       0x00000200   Zero   RW          808    .bss                hc32f460_interrupts.o
+    0x1fff8210        -       0x00000400   Zero   RW            1    STACK               startup_hc32f460.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+      1204         82        140          4          0      40765   ev_hc32f460_lqfp100_v1.o
+      2316        480          0          0          0      12507   hc32f460_clk.o
+       188         58          0          0          0       1669   hc32f460_efm.o
+       488        174          0          4          0       4098   hc32f460_exint_nmi_swi.o
+      1112        208          0          0          0       6629   hc32f460_gpio.o
+      3382       1050          0          0          0      16842   hc32f460_i2c.o
+         0          0         32          0          0        681   hc32f460_icg.o
+      3220        570          0          0        512      77251   hc32f460_interrupts.o
+       500         66          0          0          0       3247   hc32f460_keyscan.o
+       352        116          0          0          0       1954   hc32f460_pwc.o
+       464         74          0          0          0       4074   hc32f460_sram.o
+        48          4          0          0          0       1583   hc32f460_utility.o
+       490         20          0          0          0      23163   main.o
+        88         20        640          0       1024        860   startup_hc32f460.o
+       244         36          0          8          0    1514173   system_hc32f460.o
+
+    ----------------------------------------------------------------------
+     14100       2958        844         16       1536    1709496   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         4          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+         0          0          0          0          0          0   iusefp.o
+        36          0          0          0          0        108   memseta.o
+        20          0          0          0          0         68   cfcmple.o
+        20          0          0          0          0         68   cfrcmple.o
+       176          0          0          0          0        140   fadd.o
+       124          0          0          0          0         88   fdiv.o
+       110          0          0          0          0        168   fepilogue.o
+        40          0          0          0          0         68   ffixui.o
+        10          0          0          0          0         68   ffltui.o
+       100          0          0          0          0         76   fmul.o
+
+    ----------------------------------------------------------------------
+       724         16          0          0          0        920   Library Totals
+         2          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       122         16          0          0          0        176   mc_w.l
+       600          0          0          0          0        744   mf_w.l
+
+    ----------------------------------------------------------------------
+       724         16          0          0          0        920   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     14824       2974        844         16       1536    1699336   Grand Totals
+     14824       2974        844         16       1536    1699336   ELF Image Totals
+     14824       2974        844         16          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                15668 (  15.30kB)
+    Total RW  Size (RW Data + ZI Data)              1552 (   1.52kB)
+    Total ROM Size (Code + RO Data + RW Data)      15684 (  15.32kB)
+
+==============================================================================
+

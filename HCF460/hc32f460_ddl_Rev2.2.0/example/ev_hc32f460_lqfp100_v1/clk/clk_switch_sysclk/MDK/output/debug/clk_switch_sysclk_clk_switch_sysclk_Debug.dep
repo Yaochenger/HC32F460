@@ -1,0 +1,225 @@
+Dependencies for Project 'clk_switch_sysclk', Target 'clk_switch_sysclk_Debug': (DO NOT MODIFY !)
+CompilerVersion: 5060750::V5.06 update 6 (build 750)::.\ARMCC
+F (.\startup_hc32f460.s)(0x616FBEBF)(--cpu Cortex-M4 --li -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_clk_switch_sysclk_Debug-IC:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\MCU\AppData\Local\Arm\Packs\HDSC\HC32F460\1.0.8\Device\Include--pd "__UVISION_VERSION SETA 530" --pd "_RTE_ SETA 1" --pd "_RTE_ SETA 1"--list .\output\debug\startup_hc32f460.lst --xref -o .\output\debug\startup_hc32f460.o --depend .\output\debug\startup_hc32f460.d)
+F (..\..\..\..\..\mcu\common\system_hc32f460.c)(0x6098A62B)(--c99 -c --cpu Cortex-M4 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\..\..\..\mcu\common -I ..\source -I ..\..\..\..\..\driver\inc -I ..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v1 --diag_suppress=186,66-I.\RTE\_clk_switch_sysclk_Debug-IC:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\MCU\AppData\Local\Arm\Packs\HDSC\HC32F460\1.0.8\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -D_RTE_ -D__DEBUG -DHC32F460 -DUSE_DEVICE_DRIVER_LIB-o .\output\debug\system_hc32f460.o --omf_browse .\output\debug\system_hc32f460.crf --depend .\output\debug\system_hc32f460.d)
+I (..\..\..\..\..\mcu\common\hc32_common.h)(0x609E193F)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdbool.h)(0x5E53505C)
+I (..\..\..\..\..\mcu\common\hc32f460.h)(0x6166A818)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8ED122)
+I (..\..\..\..\..\mcu\common\system_hc32f460.h)(0x6098A62B)
+F (..\source\main.c)(0x6098A62C)(--c99 -c --cpu Cortex-M4 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\..\..\..\mcu\common -I ..\source -I ..\..\..\..\..\driver\inc -I ..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v1 --diag_suppress=186,66-I.\RTE\_clk_switch_sysclk_Debug-IC:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\MCU\AppData\Local\Arm\Packs\HDSC\HC32F460\1.0.8\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -D_RTE_ -D__DEBUG -DHC32F460 -DUSE_DEVICE_DRIVER_LIB-o .\output\debug\main.o --omf_browse .\output\debug\main.crf --depend .\output\debug\main.d)
+I (..\..\..\..\..\mcu\common\hc32_ddl.h)(0x616929BC)
+I (..\..\..\..\..\mcu\common\hc32_common.h)(0x609E193F)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdbool.h)(0x5E53505C)
+I (..\..\..\..\..\mcu\common\hc32f460.h)(0x6166A818)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8ED122)
+I (..\..\..\..\..\mcu\common\system_hc32f460.h)(0x6098A62B)
+I (..\source\ddl_config.h)(0x6098A62C)
+I (..\..\..\..\..\driver\inc\hc32f460_clk.h)(0x6098A632)
+I (..\..\..\..\..\driver\inc\hc32f460_efm.h)(0x6098A632)
+I (..\..\..\..\..\driver\inc\hc32f460_exint_nmi_swi.h)(0x6098A632)
+I (..\..\..\..\..\driver\inc\hc32f460_gpio.h)(0x616398F7)
+I (..\..\..\..\..\driver\inc\hc32f460_icg.h)(0x6098A632)
+I (..\..\..\..\..\driver\inc\hc32f460_interrupts.h)(0x6098A632)
+I (..\..\..\..\..\driver\inc\hc32f460_keyscan.h)(0x6098A632)
+I (..\..\..\..\..\driver\inc\hc32f460_pwc.h)(0x6098A632)
+I (..\..\..\..\..\driver\inc\hc32f460_sram.h)(0x6098A632)
+I (..\..\..\..\..\driver\inc\hc32f460_utility.h)(0x6098A632)
+I (..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v1\ev_hc32f460_lqfp100_v1.h)(0x6098A62B)
+F (..\..\..\..\..\driver\src\hc32f460_pwc.c)(0x616916BA)(--c99 -c --cpu Cortex-M4 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\..\..\..\mcu\common -I ..\source -I ..\..\..\..\..\driver\inc -I ..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v1 --diag_suppress=186,66-I.\RTE\_clk_switch_sysclk_Debug-IC:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\MCU\AppData\Local\Arm\Packs\HDSC\HC32F460\1.0.8\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -D_RTE_ -D__DEBUG -DHC32F460 -DUSE_DEVICE_DRIVER_LIB-o .\output\debug\hc32f460_pwc.o --omf_browse .\output\debug\hc32f460_pwc.crf --depend .\output\debug\hc32f460_pwc.d)
+I (..\..\..\..\..\driver\inc\hc32f460_pwc.h)(0x6098A632)
+I (..\..\..\..\..\mcu\common\hc32_common.h)(0x609E193F)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdbool.h)(0x5E53505C)
+I (..\..\..\..\..\mcu\common\hc32f460.h)(0x6166A818)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8ED122)
+I (..\..\..\..\..\mcu\common\system_hc32f460.h)(0x6098A62B)
+I (..\source\ddl_config.h)(0x6098A62C)
+I (..\..\..\..\..\driver\inc\hc32f460_utility.h)(0x6098A632)
+F (..\..\..\..\..\driver\src\hc32f460_efm.c)(0x6098A631)(--c99 -c --cpu Cortex-M4 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\..\..\..\mcu\common -I ..\source -I ..\..\..\..\..\driver\inc -I ..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v1 --diag_suppress=186,66-I.\RTE\_clk_switch_sysclk_Debug-IC:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\MCU\AppData\Local\Arm\Packs\HDSC\HC32F460\1.0.8\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -D_RTE_ -D__DEBUG -DHC32F460 -DUSE_DEVICE_DRIVER_LIB-o .\output\debug\hc32f460_efm.o --omf_browse .\output\debug\hc32f460_efm.crf --depend .\output\debug\hc32f460_efm.d)
+I (..\..\..\..\..\driver\inc\hc32f460_efm.h)(0x6098A632)
+I (..\..\..\..\..\mcu\common\hc32_common.h)(0x609E193F)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdbool.h)(0x5E53505C)
+I (..\..\..\..\..\mcu\common\hc32f460.h)(0x6166A818)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8ED122)
+I (..\..\..\..\..\mcu\common\system_hc32f460.h)(0x6098A62B)
+I (..\source\ddl_config.h)(0x6098A62C)
+I (..\..\..\..\..\driver\inc\hc32f460_utility.h)(0x6098A632)
+F (..\..\..\..\..\driver\src\hc32f460_icg.c)(0x6098A631)(--c99 -c --cpu Cortex-M4 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\..\..\..\mcu\common -I ..\source -I ..\..\..\..\..\driver\inc -I ..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v1 --diag_suppress=186,66-I.\RTE\_clk_switch_sysclk_Debug-IC:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\MCU\AppData\Local\Arm\Packs\HDSC\HC32F460\1.0.8\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -D_RTE_ -D__DEBUG -DHC32F460 -DUSE_DEVICE_DRIVER_LIB-o .\output\debug\hc32f460_icg.o --omf_browse .\output\debug\hc32f460_icg.crf --depend .\output\debug\hc32f460_icg.d)
+I (..\..\..\..\..\driver\inc\hc32f460_icg.h)(0x6098A632)
+I (..\..\..\..\..\mcu\common\hc32_common.h)(0x609E193F)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdbool.h)(0x5E53505C)
+I (..\..\..\..\..\mcu\common\hc32f460.h)(0x6166A818)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8ED122)
+I (..\..\..\..\..\mcu\common\system_hc32f460.h)(0x6098A62B)
+I (..\source\ddl_config.h)(0x6098A62C)
+F (..\..\..\..\..\driver\src\hc32f460_interrupts.c)(0x6164FAEE)(--c99 -c --cpu Cortex-M4 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\..\..\..\mcu\common -I ..\source -I ..\..\..\..\..\driver\inc -I ..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v1 --diag_suppress=186,66-I.\RTE\_clk_switch_sysclk_Debug-IC:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\MCU\AppData\Local\Arm\Packs\HDSC\HC32F460\1.0.8\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -D_RTE_ -D__DEBUG -DHC32F460 -DUSE_DEVICE_DRIVER_LIB-o .\output\debug\hc32f460_interrupts.o --omf_browse .\output\debug\hc32f460_interrupts.crf --depend .\output\debug\hc32f460_interrupts.d)
+I (..\..\..\..\..\driver\inc\hc32f460_interrupts.h)(0x6098A632)
+I (..\..\..\..\..\mcu\common\hc32_common.h)(0x609E193F)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdbool.h)(0x5E53505C)
+I (..\..\..\..\..\mcu\common\hc32f460.h)(0x6166A818)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8ED122)
+I (..\..\..\..\..\mcu\common\system_hc32f460.h)(0x6098A62B)
+I (..\source\ddl_config.h)(0x6098A62C)
+I (..\..\..\..\..\driver\inc\hc32f460_utility.h)(0x6098A632)
+F (..\..\..\..\..\driver\src\hc32f460_utility.c)(0x616398F7)(--c99 -c --cpu Cortex-M4 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\..\..\..\mcu\common -I ..\source -I ..\..\..\..\..\driver\inc -I ..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v1 --diag_suppress=186,66-I.\RTE\_clk_switch_sysclk_Debug-IC:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\MCU\AppData\Local\Arm\Packs\HDSC\HC32F460\1.0.8\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -D_RTE_ -D__DEBUG -DHC32F460 -DUSE_DEVICE_DRIVER_LIB-o .\output\debug\hc32f460_utility.o --omf_browse .\output\debug\hc32f460_utility.crf --depend .\output\debug\hc32f460_utility.d)
+I (..\..\..\..\..\driver\inc\hc32f460_utility.h)(0x6098A632)
+I (..\..\..\..\..\mcu\common\hc32_common.h)(0x609E193F)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdbool.h)(0x5E53505C)
+I (..\..\..\..\..\mcu\common\hc32f460.h)(0x6166A818)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8ED122)
+I (..\..\..\..\..\mcu\common\system_hc32f460.h)(0x6098A62B)
+I (..\source\ddl_config.h)(0x6098A62C)
+F (..\..\..\..\..\driver\src\hc32f460_exint_nmi_swi.c)(0x6098A631)(--c99 -c --cpu Cortex-M4 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\..\..\..\mcu\common -I ..\source -I ..\..\..\..\..\driver\inc -I ..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v1 --diag_suppress=186,66-I.\RTE\_clk_switch_sysclk_Debug-IC:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\MCU\AppData\Local\Arm\Packs\HDSC\HC32F460\1.0.8\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -D_RTE_ -D__DEBUG -DHC32F460 -DUSE_DEVICE_DRIVER_LIB-o .\output\debug\hc32f460_exint_nmi_swi.o --omf_browse .\output\debug\hc32f460_exint_nmi_swi.crf --depend .\output\debug\hc32f460_exint_nmi_swi.d)
+I (..\..\..\..\..\driver\inc\hc32f460_exint_nmi_swi.h)(0x6098A632)
+I (..\..\..\..\..\mcu\common\hc32_common.h)(0x609E193F)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdbool.h)(0x5E53505C)
+I (..\..\..\..\..\mcu\common\hc32f460.h)(0x6166A818)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8ED122)
+I (..\..\..\..\..\mcu\common\system_hc32f460.h)(0x6098A62B)
+I (..\source\ddl_config.h)(0x6098A62C)
+I (..\..\..\..\..\driver\inc\hc32f460_utility.h)(0x6098A632)
+F (..\..\..\..\..\driver\src\hc32f460_sram.c)(0x6098A631)(--c99 -c --cpu Cortex-M4 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\..\..\..\mcu\common -I ..\source -I ..\..\..\..\..\driver\inc -I ..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v1 --diag_suppress=186,66-I.\RTE\_clk_switch_sysclk_Debug-IC:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\MCU\AppData\Local\Arm\Packs\HDSC\HC32F460\1.0.8\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -D_RTE_ -D__DEBUG -DHC32F460 -DUSE_DEVICE_DRIVER_LIB-o .\output\debug\hc32f460_sram.o --omf_browse .\output\debug\hc32f460_sram.crf --depend .\output\debug\hc32f460_sram.d)
+I (..\..\..\..\..\driver\inc\hc32f460_sram.h)(0x6098A632)
+I (..\..\..\..\..\mcu\common\hc32_common.h)(0x609E193F)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdbool.h)(0x5E53505C)
+I (..\..\..\..\..\mcu\common\hc32f460.h)(0x6166A818)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8ED122)
+I (..\..\..\..\..\mcu\common\system_hc32f460.h)(0x6098A62B)
+I (..\source\ddl_config.h)(0x6098A62C)
+I (..\..\..\..\..\driver\inc\hc32f460_utility.h)(0x6098A632)
+F (..\..\..\..\..\driver\src\hc32f460_keyscan.c)(0x6098A631)(--c99 -c --cpu Cortex-M4 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\..\..\..\mcu\common -I ..\source -I ..\..\..\..\..\driver\inc -I ..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v1 --diag_suppress=186,66-I.\RTE\_clk_switch_sysclk_Debug-IC:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\MCU\AppData\Local\Arm\Packs\HDSC\HC32F460\1.0.8\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -D_RTE_ -D__DEBUG -DHC32F460 -DUSE_DEVICE_DRIVER_LIB-o .\output\debug\hc32f460_keyscan.o --omf_browse .\output\debug\hc32f460_keyscan.crf --depend .\output\debug\hc32f460_keyscan.d)
+I (..\..\..\..\..\driver\inc\hc32f460_keyscan.h)(0x6098A632)
+I (..\..\..\..\..\mcu\common\hc32_common.h)(0x609E193F)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdbool.h)(0x5E53505C)
+I (..\..\..\..\..\mcu\common\hc32f460.h)(0x6166A818)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8ED122)
+I (..\..\..\..\..\mcu\common\system_hc32f460.h)(0x6098A62B)
+I (..\source\ddl_config.h)(0x6098A62C)
+I (..\..\..\..\..\driver\inc\hc32f460_utility.h)(0x6098A632)
+F (..\..\..\..\..\driver\src\hc32f460_clk.c)(0x6098E0EC)(--c99 -c --cpu Cortex-M4 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\..\..\..\mcu\common -I ..\source -I ..\..\..\..\..\driver\inc -I ..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v1 --diag_suppress=186,66-I.\RTE\_clk_switch_sysclk_Debug-IC:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\MCU\AppData\Local\Arm\Packs\HDSC\HC32F460\1.0.8\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -D_RTE_ -D__DEBUG -DHC32F460 -DUSE_DEVICE_DRIVER_LIB-o .\output\debug\hc32f460_clk.o --omf_browse .\output\debug\hc32f460_clk.crf --depend .\output\debug\hc32f460_clk.d)
+I (..\..\..\..\..\driver\inc\hc32f460_clk.h)(0x6098A632)
+I (..\..\..\..\..\mcu\common\hc32_common.h)(0x609E193F)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdbool.h)(0x5E53505C)
+I (..\..\..\..\..\mcu\common\hc32f460.h)(0x6166A818)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8ED122)
+I (..\..\..\..\..\mcu\common\system_hc32f460.h)(0x6098A62B)
+I (..\source\ddl_config.h)(0x6098A62C)
+I (..\..\..\..\..\driver\inc\hc32f460_utility.h)(0x6098A632)
+F (..\..\..\..\..\driver\src\hc32f460_gpio.c)(0x6098A631)(--c99 -c --cpu Cortex-M4 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\..\..\..\mcu\common -I ..\source -I ..\..\..\..\..\driver\inc -I ..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v1 --diag_suppress=186,66-I.\RTE\_clk_switch_sysclk_Debug-IC:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\MCU\AppData\Local\Arm\Packs\HDSC\HC32F460\1.0.8\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -D_RTE_ -D__DEBUG -DHC32F460 -DUSE_DEVICE_DRIVER_LIB-o .\output\debug\hc32f460_gpio.o --omf_browse .\output\debug\hc32f460_gpio.crf --depend .\output\debug\hc32f460_gpio.d)
+I (..\..\..\..\..\driver\inc\hc32f460_gpio.h)(0x616398F7)
+I (..\..\..\..\..\mcu\common\hc32_common.h)(0x609E193F)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdbool.h)(0x5E53505C)
+I (..\..\..\..\..\mcu\common\hc32f460.h)(0x6166A818)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8ED122)
+I (..\..\..\..\..\mcu\common\system_hc32f460.h)(0x6098A62B)
+I (..\source\ddl_config.h)(0x6098A62C)
+I (..\..\..\..\..\driver\inc\hc32f460_utility.h)(0x6098A632)
+F (..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v1\ev_hc32f460_lqfp100_v1.c)(0x6098A62B)(--c99 -c --cpu Cortex-M4 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\..\..\..\mcu\common -I ..\source -I ..\..\..\..\..\driver\inc -I ..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v1 --diag_suppress=186,66-I.\RTE\_clk_switch_sysclk_Debug-IC:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\MCU\AppData\Local\Arm\Packs\HDSC\HC32F460\1.0.8\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -D_RTE_ -D__DEBUG -DHC32F460 -DUSE_DEVICE_DRIVER_LIB-o .\output\debug\ev_hc32f460_lqfp100_v1.o --omf_browse .\output\debug\ev_hc32f460_lqfp100_v1.crf --depend .\output\debug\ev_hc32f460_lqfp100_v1.d)
+I (..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v1\ev_hc32f460_lqfp100_v1.h)(0x6098A62B)
+I (..\..\..\..\..\mcu\common\hc32_common.h)(0x609E193F)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdbool.h)(0x5E53505C)
+I (..\..\..\..\..\mcu\common\hc32f460.h)(0x6166A818)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (C:\Users\MCU\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8ED122)
+I (..\..\..\..\..\mcu\common\system_hc32f460.h)(0x6098A62B)
+I (..\..\..\..\..\driver\inc\hc32f460_utility.h)(0x6098A632)
+I (..\source\ddl_config.h)(0x6098A62C)
+I (..\..\..\..\..\driver\inc\hc32f460_clk.h)(0x6098A632)
+I (..\..\..\..\..\driver\inc\hc32f460_efm.h)(0x6098A632)
+I (..\..\..\..\..\driver\inc\hc32f460_gpio.h)(0x616398F7)
+I (..\..\..\..\..\driver\inc\hc32f460_exint_nmi_swi.h)(0x6098A632)
+I (..\..\..\..\..\driver\inc\hc32f460_interrupts.h)(0x6098A632)
+I (..\..\..\..\..\driver\inc\hc32f460_pwc.h)(0x6098A632)
+I (..\..\..\..\..\driver\inc\hc32f460_sram.h)(0x6098A632)
+I (..\..\..\..\..\driver\inc\hc32f460_keyscan.h)(0x6098A632)
+F (..\Readme.txt)(0x6098A62C)()

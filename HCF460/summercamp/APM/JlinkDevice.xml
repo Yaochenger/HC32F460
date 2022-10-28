@@ -1,0 +1,7 @@
+  <!--                   -->
+  <!-- Geehy -->
+  <!--                   -->
+  <Device>
+   <ChipInfo Vendor="Geehy" Name="APM32F103ZE" Core="JLINK_CORE_CORTEX_M3" WorkRAMAddr="0x20000000" WorkRAMSize="0x00020000" />
+   <FlashBankInfo Name="IROM1" BaseAddr="0x08000000" MaxSize="0x00080000" Loader="Devices/Geehy/APM32F1/APM32F10x_512.FLM" LoaderType="FLASH_ALGO_TYPE_OPEN" />
+  </Device>

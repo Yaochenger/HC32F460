@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+    <name>iap_boot</name>
+    <comment></comment>
+    <projects>
+    </projects>
+    <buildSpec>
+        <buildCommand>
+            <name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+            <triggers>clean,full,incremental,</triggers>
+            <arguments>
+            </arguments>
+        </buildCommand>
+        <buildCommand>
+            <name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+            <triggers>full,incremental,</triggers>
+            <arguments>
+            </arguments>
+        </buildCommand>
+    </buildSpec>
+    <natures>
+        <nature>org.eclipse.cdt.core.cnature</nature>
+        <nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+        <nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+    </natures>
+    <linkedResources>
+        <link>
+            <name>source</name>
+            <type>2</type>
+            <locationURI>virtual:/virtual</locationURI>
+        </link>
+        <link>
+            <name>source/main.c</name>
+            <type>1</type>
+            <locationURI>$%7BPARENT-1-PROJECT_LOC%7D/source/main.c</locationURI>
+        </link>
+        <link>
+<name>source</name>
+<type>2</type>
+<locationURI>virtual:/virtual</locationURI>
+</link>
+<link>
+<name>source/com.c</name>
+<type>1</type>
+<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/source/com.c</locationURI>
+</link>
+<link>
+<name>source/flash.c</name>
+<type>1</type>
+<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/source/flash.c</locationURI>
+</link>
+<link>
+<name>source/modem.c</name>
+<type>1</type>
+<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/source/modem.c</locationURI>
+</link>
+
+        <link>
+            <name>readme</name>
+            <type>2</type>
+            <locationURI>virtual:/virtual</locationURI>
+        </link>
+        <link>
+            <name>readme/readme.txt/</name>
+            <type>1</type>
+            <locationURI>$%7BPARENT-1-PROJECT_LOC%7D/Readme.txt</locationURI>
+        </link>
+        <link>
+            <name>cmsis</name>
+            <type>2</type>
+            <locationURI>virtual:/virtual</locationURI>
+        </link>
+        <link>
+            <name>cmsis/system_hc32f460.c/</name>
+            <type>1</type>
+            <locationURI>$%7BPARENT-6-PROJECT_LOC%7D/drivers/cmsis/Device/HDSC/hc32f4xx/Source/system_hc32f460.c</locationURI>
+        </link>
+        <link>
+<name>driver</name>
+<type>2</type>
+<locationURI>virtual:/virtual</locationURI>
+</link>
+<link>
+<name>driver/hc32_ll.c</name>
+<type>1</type>
+<locationURI>$%7BPARENT-6-PROJECT_LOC%7D/drivers/hc32_ll_driver/src/hc32_ll.c</locationURI>
+</link>
+<link>
+<name>driver/hc32_ll_clk.c</name>
+<type>1</type>
+<locationURI>$%7BPARENT-6-PROJECT_LOC%7D/drivers/hc32_ll_driver/src/hc32_ll_clk.c</locationURI>
+</link>
+<link>
+<name>driver/hc32_ll_crc.c</name>
+<type>1</type>
+<locationURI>$%7BPARENT-6-PROJECT_LOC%7D/drivers/hc32_ll_driver/src/hc32_ll_crc.c</locationURI>
+</link>
+<link>
+<name>driver/hc32_ll_efm.c</name>
+<type>1</type>
+<locationURI>$%7BPARENT-6-PROJECT_LOC%7D/drivers/hc32_ll_driver/src/hc32_ll_efm.c</locationURI>
+</link>
+<link>
+<name>driver/hc32_ll_fcg.c</name>
+<type>1</type>
+<locationURI>$%7BPARENT-6-PROJECT_LOC%7D/drivers/hc32_ll_driver/src/hc32_ll_fcg.c</locationURI>
+</link>
+<link>
+<name>driver/hc32_ll_gpio.c</name>
+<type>1</type>
+<locationURI>$%7BPARENT-6-PROJECT_LOC%7D/drivers/hc32_ll_driver/src/hc32_ll_gpio.c</locationURI>
+</link>
+<link>
+<name>driver/hc32_ll_icg.c</name>
+<type>1</type>
+<locationURI>$%7BPARENT-6-PROJECT_LOC%7D/drivers/hc32_ll_driver/src/hc32_ll_icg.c</locationURI>
+</link>
+<link>
+<name>driver/hc32_ll_pwc.c</name>
+<type>1</type>
+<locationURI>$%7BPARENT-6-PROJECT_LOC%7D/drivers/hc32_ll_driver/src/hc32_ll_pwc.c</locationURI>
+</link>
+<link>
+<name>driver/hc32_ll_sram.c</name>
+<type>1</type>
+<locationURI>$%7BPARENT-6-PROJECT_LOC%7D/drivers/hc32_ll_driver/src/hc32_ll_sram.c</locationURI>
+</link>
+<link>
+<name>driver/hc32_ll_usart.c</name>
+<type>1</type>
+<locationURI>$%7BPARENT-6-PROJECT_LOC%7D/drivers/hc32_ll_driver/src/hc32_ll_usart.c</locationURI>
+</link>
+<link>
+<name>driver/hc32_ll_utility.c</name>
+<type>1</type>
+<locationURI>$%7BPARENT-6-PROJECT_LOC%7D/drivers/hc32_ll_driver/src/hc32_ll_utility.c</locationURI>
+</link>
+
+    </linkedResources>
+</projectDescription>

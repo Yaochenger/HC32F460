@@ -1,0 +1,36 @@
+; ****************************************************************
+; Scatter-Loading Description File for IEC 60730 project
+; ****************************************************************
+  LR_IROM1 0x00000000 0x0007FFE0  {    ; load region size_region
+    ER_IROM1 0x00000000 0x0007FFDC  {  ; load address = execution address
+      *.o (RESET, +First)
+      *(InRoot$$Sections)
+      .ANY (+RO)
+    }
+
+    ER_IROM_CHECKSUM 0x0007FFDC 0x0007FFE0  {  ; load address = execution address
+      stl_test_flash.o (.checksum, +Last)
+    }
+
+    MARCH_RAM 0x1FFF8000 0x00000020 {          ; Run-time RAM test variables
+      stl_test_ram_runtime.o (.march_ram)
+    }
+
+    MARCH_RAM_BUF 0x1FFF8020 0x00000010 {      ; Run-time RAM test buffer
+      stl_test_ram_runtime.o (.march_ram_buf)
+    }
+
+    MARCH_RAM_POINTER 0x1FFF8030 UNINIT {      ; Run-time RAM test pointer
+      stl_test_ram_runtime.o (.march_ram_pointer)
+    }
+
+    RW_IRAM1 0x1FFF8100 UNINIT  {     ; RW data
+      .ANY (+RW +ZI)
+    }
+
+    STACK_NO_HEAP 0x20000000 UNINIT 0x00000810  { ; Stack and magic pattern for stack overflow detection
+      stl_test_ram_runtime.o (.stack_boundary)
+      startup_hc32f460.o (STACK, +Last)
+    }
+
+  }
